@@ -419,25 +419,25 @@ public class AppFrame extends JFrame{
 		Object[] columnTitle={"课程号","课程名","学期" ,"学分","成绩","绩点"};
 		choose_semaster.setFont(new Font("宋体", Font.PLAIN, 25));
 		Object[][] tabledata= {
-				new Object[] {"","","","","",""},
-				new Object[] {"","","","","",""},
-				new Object[] {"","","","","",""},
-				new Object[] {"","","","","",""},
-				new Object[] {"","","","","",""},
-				new Object[] {"","","","","",""},
-				new Object[] {"","","","","",""},
-				new Object[] {"","","","","",""},
-				new Object[] {"","","","","",""},
-				new Object[] {"","","","","",""},
-				new Object[] {"","","","","",""},
-				new Object[] {"","","","","",""},
-				new Object[] {"","","","","",""},
-				new Object[] {"","","","","",""},
-				new Object[] {"","","","","",""},
-				new Object[] {"","","","","",""},
-				new Object[] {"","","","","",""},
-				new Object[] {"","","","","",""},
-				new Object[] {"","","","","",""}
+				{"","","","","",""},
+				{"","","","","",""},
+				{"","","","","",""},
+				{"","","","","",""},
+				{"","","","","",""},
+				{"","","","","",""},
+				{"","","","","",""},
+				{"","","","","",""},
+				{"","","","","",""},
+				{"","","","","",""},
+				{"","","","","",""},
+				{"","","","","",""},
+				{"","","","","",""},
+				{"","","","","",""},
+				{"","","","","",""},
+				{"","","","","",""},
+				{"","","","","",""},
+				{"","","","","",""},
+				{"","","","","",""}
 		};
 		JTable grade=new JTable(tabledata,columnTitle);
 		grade.setFont(new Font("宋体", Font.PLAIN, 25));
@@ -570,7 +570,29 @@ public class AppFrame extends JFrame{
 	//editor：刘睿睿  *
 	//功能：生活查询    *
 	//*************
-	JPanel ShuidianLayout() {
+	JPanel campusCardLayout() {
+		JPanel campus_card_recharge = new JPanel();
+		campus_card_recharge.setLayout(new GridBagLayout());
+		campus_card_recharge.setSize(100, 6);
+
+		JLabel label1 = new JLabel("暨南大学");
+		JLabel label2 = new JLabel("姓名：刘睿睿");
+		JLabel label3 = new JLabel("卡号：2***7");
+		JLabel label4 = new JLabel("当前余额：3");
+		JTextField recharge = new JTextField("充值：        元");
+		JButton b1 = new JButton("充值");
+
+		campus_card_recharge.add(label1, new GBC(0, 0, 1, 1).setFill(GBC.WEST).setWeight(8, 1));
+		campus_card_recharge.add(label2, new GBC(0, 1, 1, 1).setFill(GBC.WEST).setWeight(8, 1));
+		campus_card_recharge.add(label3, new GBC(0, 2, 1, 1).setFill(GBC.WEST).setWeight(8, 1));
+		campus_card_recharge.add(label4, new GBC(0, 3, 1, 1).setFill(GBC.WEST).setWeight(8, 1));
+		campus_card_recharge.add(recharge, new GBC(0, 4, 1, 1).setFill(GBC.WEST).setWeight(8, 1));
+		campus_card_recharge.add(b1, new GBC(3, 5, 1, 1).setFill(GBC.EAST).setWeight(8, 1));
+
+		return campus_card_recharge;
+	}
+	
+	JPanel shuidianLayout() {
 		JPanel shuidian_recharge = new JPanel();
 		shuidian_recharge.setLayout(new GridBagLayout());
 		shuidian_recharge.setSize(100, 100);

@@ -96,12 +96,15 @@ public class TreeRootIcon {
 						switch (nodestr) {
 							case "校园卡":
 								System.out.println("校园卡");
+								appFrame.getArea().removeAll();
+								appFrame.getArea().add(appFrame.campusCardLayout(), BorderLayout.CENTER);
+								appFrame.revalidate();
 								break;
 	
 							case "水电":
 								System.out.println("水电");
 								appFrame.getArea().removeAll();
-								appFrame.getArea().add(appFrame.ShuidianLayout(), BorderLayout.CENTER);
+								appFrame.getArea().add(appFrame.shuidianLayout(), BorderLayout.CENTER);
 								appFrame.revalidate();
 								break;
 						}
