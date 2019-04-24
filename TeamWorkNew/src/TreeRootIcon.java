@@ -113,8 +113,8 @@ public class TreeRootIcon {
 							case "ä¯ÀÀÂÛÌ³":
 								System.out.println("ä¯ÀÀÂÛÌ³");
 								appFrame.getArea().removeAll();
-//								new Forum(appFrame.getArea());
-//								appFrame.getArea().revalidate();
+								new Forum(appFrame.getArea());
+								appFrame.getArea().revalidate();
 								break;
 						}
 						break;

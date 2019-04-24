@@ -31,23 +31,30 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.tree.DefaultMutableTreeNode;
 
 public class AppFrame extends JFrame{
-	
+
 	private Container container;
-	private JPanel menu; 
+	private JPanel menu;
 	private JPanel area;
-	
+
+	//*********************
+	//editor:陈佳兰
+	JTextField searchText;
+	JButton searchButton;
+	Object[][] tableData_result;
+	//*******************
+
 	void launch() {
 		this.setLayout(new GridBagLayout());
 		this.setExtendedState(JFrame.MAXIMIZED_BOTH);
 		container = this.getContentPane();
-		
+
 		addMenu();
 		addArea();
-		
+
 		this.setVisible(true);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
-	
+
 	//****************
 	//editor：张泽锋             *
 	//功能：添加左边菜单栏   *
@@ -66,45 +73,51 @@ public class AppFrame extends JFrame{
 		addInformation();
 		container.add(menu, new GBC(0, 0, 1, 1).setFill(GBC.BOTH).setWeight(1, 1).setAnchor(GBC.WEST));
 	}
-	
+
 	//******************************
 	//editor:zzf                   *
-	//功能：以下每个add为左边菜单栏里的各选项 *	
+	//功能：以下每个add为左边菜单栏里的各选项 *
 	//******************************
 	void addSpace() {
 		JPanel space = new JPanel();
 		space.setBackground(Color.WHITE);
 		menu.add(space, new GBC(GBC.REMAINDER, 2, 2).setFill(GBC.BOTH));
 	}
-	
+
 	void addSearch() {
 		JPanel search = new JPanel();
 		search.setBackground(Color.WHITE);
 		ImageIcon searchIcon = new ImageIcon("./images/search.png");
-		JButton searchButton = new JButton("搜索");
+		searchButton = new JButton("搜索");
 		searchButton.setSize(10,15);
 		searchButton.setIcon(new IconSizeAdapt(searchIcon, searchButton).getAdaptIcon());
 		searchButton.setContentAreaFilled(false);
-		JTextField searchText = new JTextField(8);
-		
-		
+		searchText = new JTextField(8);
+
+
 		search.setLayout(new FlowLayout());
 		searchButton.setBorder(new EmptyBorder(0, 0, 0, 0));
 
 		searchButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+
+				//进行搜索,editor:陈佳兰
+				search searching=new search();
+				tableData_result=searching.find_searchresult(searchText.getText());
+				//*****************
+
 				area.removeAll();
-				area.add(searchLayout(), BorderLayout.CENTER);
+				area.add(searchLayout(tableData_result), BorderLayout.CENTER);
 				area.revalidate();
 			}
 		});
-		
+
 		search.add(searchText);
 		search.add(searchButton);
 		addSpace();
 		menu.add(search, new GBC(GBC.REMAINDER, 3, 3).setFill(GBC.BOTH));
 	}
-	
+
 	void addGrade() {
 //		JPanel grade = new JPanel();
 		JTree gradeTree;
@@ -122,7 +135,7 @@ public class AppFrame extends JFrame{
 		addSpace();
 		menu.add(gradeTree, new GBC(GBC.REMAINDER, 5, 5).setFill(GBC.BOTH).setAnchor(GBC.WEST));
 	}
-	
+
 	void addDocument() {
 //		JPanel document = new JPanel();
 		JTree documentTree;
@@ -137,7 +150,7 @@ public class AppFrame extends JFrame{
 		addSpace();
 		menu.add(documentTree, new GBC(GBC.REMAINDER, 3, 3).setFill(GBC.BOTH).setAnchor(GBC.WEST));
 	}
-	
+
 	void addMessage() {
 //		JPanel message = new JPanel();
 		JTree messageTree;
@@ -152,7 +165,7 @@ public class AppFrame extends JFrame{
 		addSpace();
 		menu.add(messageTree, new GBC(GBC.REMAINDER, 3, 3).setFill(GBC.BOTH).setAnchor(GBC.WEST));
 	}
-	
+
 	void addJob() {
 //		JPanel job = new JPanel();
 		JTree jobTree;
@@ -167,7 +180,7 @@ public class AppFrame extends JFrame{
 		addSpace();
 		menu.add(jobTree, new GBC(GBC.REMAINDER, 3, 3).setFill(GBC.BOTH).setAnchor(GBC.WEST));
 	}
-	
+
 	void addLife() {
 //		JPanel life = new JPanel();
 		JTree lifeTree;
@@ -185,7 +198,7 @@ public class AppFrame extends JFrame{
 		addSpace();
 		menu.add(lifeTree, new GBC(GBC.REMAINDER, 5, 5).setFill(GBC.BOTH).setAnchor(GBC.WEST));
 	}
-	
+
 	void addForum() {
 //		JPanel forum = new JPanel();
 		JTree forumTree;
@@ -200,7 +213,7 @@ public class AppFrame extends JFrame{
 		addSpace();
 		menu.add(forumTree, new GBC(GBC.REMAINDER, 3, 3).setFill(GBC.BOTH).setAnchor(GBC.WEST));
 	}
-	
+
 	void addInformation() {
 //		JPanel information = new JPanel();
 		JTree informationTree;
@@ -220,7 +233,7 @@ public class AppFrame extends JFrame{
 		addSpace();
 		addSpace();
 	}
-	
+
 	//各组员在此area的JPanel中添加你的布局，注意，不要直接添加在area，自己再建一个容器，布局添加在自己新建的容器，将容器再添加至area
 	//****************
 	//editor：张泽锋             *
@@ -234,8 +247,8 @@ public class AppFrame extends JFrame{
 //		searchLayout(area);
 		container.add(area, new GBC(1, 0, 10, 1).setFill(GBC.BOTH).setWeight(10, 1));
 	}
-	
-	
+
+
 	//*************************
 	//editor：陈佳兰                                    *
 	//功能：个人信息界面和搜索结果界面    *
@@ -243,7 +256,7 @@ public class AppFrame extends JFrame{
 	JPanel infoLayout()
 	{
 		TextField stu_id,name,uni_password,jwc_password,jnu_password,dorm_num,card_num,forum_account,forum_password;
-		
+
 		stu_id = new TextField(70);
 		name = new TextField(70);
 		uni_password = new TextField(70);
@@ -253,21 +266,21 @@ public class AppFrame extends JFrame{
 		card_num = new TextField(70);
 		forum_account = new TextField(70);
 		forum_password= new TextField(70);
-		
-		
+
+
 		JLabel t_stu_id,t_name,t_uni_password,t_jwc_password,t_jnu_password,t_dorm_num,t_card_num,t_forum_account,t_forum_password;
-		t_stu_id=new JLabel("学号                ");
-		t_name=new JLabel("姓名                ");
-		t_uni_password=new JLabel("统一密码        ");
-		t_jwc_password=new JLabel("教务处密码    ");
+		t_stu_id=new JLabel("学号        ");
+		t_name=new JLabel("姓名        ");
+		t_uni_password=new JLabel("统一密码    ");
+		t_jwc_password=new JLabel("教务处密码  ");
 		t_jnu_password=new JLabel("数字暨大密码");
-		t_dorm_num=new JLabel("宿舍号            ");
-		t_card_num=new JLabel("学生卡卡号    ");
-		t_forum_account=new JLabel("论坛账号        ");
-		t_forum_password=new JLabel("论坛密码        ");
-		
+		t_dorm_num=new JLabel("宿舍号      ");
+		t_card_num=new JLabel("学生卡卡号  ");
+		t_forum_account=new JLabel("论坛账号    ");
+		t_forum_password=new JLabel("论坛密码    ");
+
 		JPanel jp_stu_id,jp_name,jp_uni_password,jp_jwc_password,jp_jnu_password,jp_dorm_num,jp_card_num,jp_forum_account,jp_forum_password;
-		
+
 		jp_stu_id=new JPanel();
 		jp_name=new JPanel();
 		jp_uni_password=new JPanel();
@@ -277,7 +290,7 @@ public class AppFrame extends JFrame{
 		jp_card_num=new JPanel();
 		jp_forum_account=new JPanel();
 		jp_forum_password=new JPanel();
-		
+
 		jp_stu_id.add(t_stu_id);
 		jp_stu_id.add(stu_id);
 		jp_name.add(t_name);
@@ -296,23 +309,23 @@ public class AppFrame extends JFrame{
 		jp_forum_account.add(forum_account);
 		jp_forum_password.add(t_forum_password);
 		jp_forum_password.add(forum_password);
-		
-		
+
+
 		JPanel confirm_btns=new JPanel();
 		JButton ensure_btn=new JButton("确定");
 		JButton cancel_btn=new JButton("取消");
 		confirm_btns.add(ensure_btn);
 		confirm_btns.add(cancel_btn);
-		
-		
+
+
 		JPanel jp_title=new JPanel();
 		Font textsize = new Font("宋体",Font.PLAIN,35);
 		JLabel title=new JLabel("个人信息");
 		title.setFont(textsize);
 		jp_title.add(title);
-		
-		
-		
+
+
+
 		Box box = Box.createVerticalBox();
 		box.add(jp_title);
 		box.add(jp_stu_id);
@@ -325,51 +338,44 @@ public class AppFrame extends JFrame{
 		box.add(jp_forum_account);
 		box.add(jp_forum_password);
 		box.add(confirm_btns);
-	
 
-		
+
+
 		JPanel info=new JPanel();
-		info.add(box, BorderLayout.CENTER);
-		
+		info.add(box);
+
 		return info;
 	}
-	
-	
-	JScrollPane searchLayout()
+
+
+	JScrollPane searchLayout(Object[][] tableData)
 	{
 		JPanel jp_search=new JPanel();
 		JTable table;
 		DefaultTableModel model = null;
 		  //定义二维数组作为表格数据
-		  Object[][] tableData =
-		  {
-		    new Object[]{"暨南大学党政办公室关于2019年清明节放假的通知" , "党政办公室" , "2019-03-15"},
-		    new Object[]{"关于《暨南大学年鉴》（2019）目录征求意见的通知", "党政办公室" , "2019-04-01"},
-		    new Object[]{"暨南大学国家重点研发专项科研助理招聘（重发）", "人力资源开发与管理处" , "2019-03-29"},
-		    new Object[]{"关于开展暨南大学2019年出国（境）本科生交换项目学生选派工作的通知","学生处" , "2019-03-29"}
-		  };
 		  //定义一维数据作为列标题
 		  Object[] columnTitle = {"标题" , "发布单位" , "发布日期"};
 		    //以二维数组和一维数组来创建一个JTable对象
 		  model = new DefaultTableModel(tableData, columnTitle);
 		  table = new JTable(model);
-		  
+
 		  //设置列占比
 		  table.getColumnModel().getColumn(0).setPreferredWidth(200);
 		  table.getColumnModel().getColumn(1).setPreferredWidth(50);
 		  table.getColumnModel().getColumn(2).setPreferredWidth(50);
-		  
+
 		  //设置字居中显示
 		  DefaultTableCellRenderer r = new DefaultTableCellRenderer();
 		  r.setHorizontalAlignment(JLabel.CENTER);
 		  table.setDefaultRenderer(Object.class, r);
-		  
+
 		  table.setPreferredScrollableViewportSize(new Dimension(700,300));//设置表格的长宽
 		  table.setRowHeight(30);//设置行宽
-		 
-		  
+
+
 		  JScrollPane JSP= new JScrollPane(table);
-	
+
 		  return JSP;
 
 	}
@@ -379,7 +385,7 @@ public class AppFrame extends JFrame{
 	//editor：张家骐                          *
 	//功能：查询成绩界面和选课界面  *
 	//**********************
-	JPanel gradesearchLayout() {	
+	JPanel gradesearchLayout() {
 		JPanel grade_search_panel=new JPanel();
 		GridBagLayout gridBagLayout=new GridBagLayout();
 		grade_search_panel.setLayout(new GridBagLayout());
@@ -390,7 +396,7 @@ public class AppFrame extends JFrame{
 		JTextField name=new JTextField("姓名：     ");
 		JTextField major=new JTextField("专业：     ");
 		JTextField college=new JTextField("学院：     ");
-		JLabel title=new JLabel("成绩查询");	
+		JLabel title=new JLabel("成绩查询");
 		//设置各个组件中的字体的大小
 		Font font=new Font("宋体", Font.PLAIN, 50);
 		title.setFont(font);
@@ -410,7 +416,7 @@ public class AppFrame extends JFrame{
 		choose_semaster.addItem("大三下");
 		choose_semaster.addItem("大四上");
 		choose_semaster.addItem("大四下");
-		Object[] columnTitle={"课程号","课程名","学期" ,"学分","成绩","绩点"};	
+		Object[] columnTitle={"课程号","课程名","学期" ,"学分","成绩","绩点"};
 		choose_semaster.setFont(new Font("宋体", Font.PLAIN, 25));
 		Object[][] tabledata= {
 				new Object[] {"","","","","",""},
@@ -454,10 +460,10 @@ public class AppFrame extends JFrame{
 		grade_search_panel.add(choose_subject, new GBC(230, 220, 1, 1).setFill(GBC.EAST).setWeight(1, 0));
 		return grade_search_panel;
 	}
-	
+
 	JPanel chooseClassLayout() {
 		JPanel choose_class_panel=new JPanel();
-		
+
 		choose_class_panel.setLayout(new GridBagLayout());
 		JLabel title=new JLabel("选课");
 		title.setFont(new Font("宋体", Font.PLAIN, 50));
@@ -487,9 +493,9 @@ public class AppFrame extends JFrame{
 		};
 		JTable class_info=new JTable(tabledata,columnTitle);
 		class_info.setFont(new Font("宋体", Font.PLAIN, 25));
-		class_info.setRowHeight(50);	
+		class_info.setRowHeight(50);
 		JButton scramble_class=new JButton("自动抢课信息设置");
-		scramble_class.setFont(new Font("宋体", Font.PLAIN, 25));	
+		scramble_class.setFont(new Font("宋体", Font.PLAIN, 25));
 		choose_class_panel.add(name , new GBC(300, 1, 8, 1).setFill(GBC.EAST).setWeight(0, 0));
 		choose_class_panel.add(major, new GBC(300, 10, 8, 1).setFill(GBC.EAST).setWeight(0, 0));
 		choose_class_panel.add(college, new GBC(300, 20, 8, 1).setFill(GBC.EAST).setWeight(0, 0));
@@ -497,7 +503,7 @@ public class AppFrame extends JFrame{
 		choose_class_panel.add(scramble_class, new GBC(230, 220, 8, 1).setFill(GBC.EAST).setWeight(8, 1));
 		name.setFont(new Font("宋体", Font.PLAIN, 25));
 		major.setFont(new Font("宋体", Font.PLAIN, 25));
-		college.setFont(new Font("宋体", Font.PLAIN, 25));		
+		college.setFont(new Font("宋体", Font.PLAIN, 25));
 		return choose_class_panel;
 	}
 
@@ -533,15 +539,15 @@ public class AppFrame extends JFrame{
 		//设置列占比
 		work.getColumnModel().getColumn(0).setPreferredWidth(200);
 		work.getColumnModel().getColumn(1).setPreferredWidth(100);
-		
+
 		//设置文字居中
 		DefaultTableCellRenderer t=new DefaultTableCellRenderer();
 		t.setHorizontalAlignment(JLabel.CENTER);
 		work.setDefaultRenderer(Object.class,t);
-		
+
 		//设置表格长,宽
 		work.setPreferredScrollableViewportSize(new Dimension(700, 300));
-	
+
 		//设置行宽
 		work.setRowHeight(50);
 		//设置文字大学
@@ -551,15 +557,15 @@ public class AppFrame extends JFrame{
 		workinfo.add(notice,new GBC(101,9,1,2).setFill(GBC.EAST).setWeight(0, 0));
 		workinfo.add(recruit,new GBC(102,9,1,1).setFill(GBC.EAST).setWeight(0, 0));
 		workinfo.add(policy,new GBC(103,9,1,1).setFill(GBC.EAST).setWeight(0, 0));
-		
+
 		JPanel total = new JPanel();
 		total.setLayout(new BorderLayout());
 		total.add(workinfo, BorderLayout.NORTH);
 		total.add(new JScrollPane(work), BorderLayout.CENTER);
-		
+
 		return total;
 	}
-	
+
 	//*************
 	//editor：刘睿睿  *
 	//功能：生活查询    *
@@ -599,24 +605,24 @@ public class AppFrame extends JFrame{
 
 		return shuidian_recharge;
 	}
-	
+
 	//*************
 	//editor：郑凯帆  *
 	//功能：文档编辑    *
 	//*************
 	JPanel documentLayout() {
-		
+
 		TextField tx_stu_id,tx_stu_name,tx_date_year,tx_date_month,tx_date_day;
 		tx_stu_id = new TextField(20);
 		tx_stu_name = new TextField(20);
-		
+
 		tx_date_year=new TextField(4);
 		tx_date_month=new TextField(4);
 		tx_date_day=new TextField(4);
-		
+
 		JTextArea tx_reason;
 		tx_reason=new JTextArea(10,20);
-		
+
 		JLabel lab_stu_id,lab_stu_name,lab_reason,lab_date,lab_year,lab_month,lab_day;
 		lab_stu_id=new JLabel("学号:	");
 		lab_stu_name=new JLabel("姓名:	");
@@ -625,10 +631,10 @@ public class AppFrame extends JFrame{
 		lab_year=new JLabel("年");
 		lab_month=new JLabel("月");
 		lab_day=new JLabel("日");
-		
+
 		final JButton jb_export;
 		jb_export=new JButton("导出文档");
-		
+
 		jb_export.addMouseListener(new MouseAdapter() {
 			 public void mouseClicked(MouseEvent e) {
                  JPopupMenu  pop  = new JPopupMenu();//你的弹出菜单
@@ -636,33 +642,33 @@ public class AppFrame extends JFrame{
          		JMenuItem item2 = new JMenuItem("PDF");
          		pop.add(item1);
          	    pop.add(item2);
-              
+
                 pop.show(jb_export,e.getX(),e.getY());
               }
 		});
-		
+
 		//JMenuBar jMenuBar = new JMenuBar();
-		
+
 		/*JMenu jMenu = new JMenu("导出文档");
 		JMenuItem item1 = new JMenuItem("WORD格式");
         JMenuItem item2 = new JMenuItem("PDF格式");
         jMenu.add(item1);
         jMenu.add(item2);*/
         //jMenuBar.add(jMenu);
-		
+
 		/*JPopupMenu editMenu = new JPopupMenu("Edit");
 		JMenuItem item1 = new JMenuItem("WORD");
 		JMenuItem item2 = new JMenuItem("PDF");
 		editMenu.add(item1);
 	    editMenu.add(item2);*/
-	    
+
 		JPanel jp_stu_id,jp_stu_name,jp_reason,jp_date,jp_button;
 		jp_stu_id=new JPanel();
 		jp_stu_name=new JPanel();
 		jp_reason=new JPanel();
 		jp_date=new JPanel();
 		jp_button=new JPanel();
-		
+
 		jp_stu_id.add(lab_stu_id);
 		jp_stu_id.add(tx_stu_id);
 		jp_stu_name.add(lab_stu_name);
@@ -679,13 +685,13 @@ public class AppFrame extends JFrame{
 		jp_button.add(jb_export);
 		//editMenu.show(jp_button);
 
-		
+
 		JPanel jp_title=new JPanel();
 		Font textsize = new Font("宋体",Font.PLAIN,35);
 		JLabel title=new JLabel("请假条");
 		title.setFont(textsize);
 		jp_title.add(title);
-		
+
 		Box box = Box.createVerticalBox();
 		box.add(jp_title);
 		box.add(jp_stu_id);
@@ -693,14 +699,14 @@ public class AppFrame extends JFrame{
 		box.add(jp_reason);
 		box.add(jp_date);
 		box.add(jp_button);
-		
+
 		JPanel docu=new JPanel();
 		docu.add(box);
-		
+
 		return docu;
 	}
-	
-	
+
+
 	//********************
 	//editor：zzf         *
 	//功能：getter&setter *
@@ -708,5 +714,5 @@ public class AppFrame extends JFrame{
 	public JPanel getArea() {
 		return area;
 	}
-	
+
 }
