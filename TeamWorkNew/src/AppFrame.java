@@ -35,6 +35,8 @@ public class AppFrame extends JFrame{
 	private Container container;
 	private JPanel menu;
 	private JPanel area;
+	private JScrollPane menuJscroll;
+	private JScrollPane areaJscroll;
 
 	//*********************
 	//editor:³Â¼ÑÀ¼
@@ -71,7 +73,8 @@ public class AppFrame extends JFrame{
 		addLife();
 		addForum();
 		addInformation();
-		container.add(menu, new GBC(0, 0, 1, 1).setFill(GBC.BOTH).setWeight(1, 1).setAnchor(GBC.WEST));
+		menuJscroll = new JScrollPane(menu);
+		container.add(menuJscroll, new GBC(0, 0, 1, 1).setFill(GBC.BOTH).setWeight(1, 1).setAnchor(GBC.WEST));
 	}
 
 	//******************************
@@ -242,10 +245,11 @@ public class AppFrame extends JFrame{
 	void addArea() {
 		area = new JPanel();
 		area.setLayout(new BorderLayout());
-		area.setBackground(Color.GREEN);
+		area.setBackground(null);
 //		infoLayout(area);
 //		searchLayout(area);
-		container.add(area, new GBC(1, 0, 10, 1).setFill(GBC.BOTH).setWeight(10, 1));
+		areaJscroll = new JScrollPane(area);
+		container.add(areaJscroll, new GBC(1, 0, 10, 1).setFill(GBC.BOTH).setWeight(10, 1));
 	}
 
 
@@ -735,6 +739,10 @@ public class AppFrame extends JFrame{
 	//********************
 	public JPanel getArea() {
 		return area;
+	}
+
+	public JScrollPane getAreaJscroll() {
+		return areaJscroll;
 	}
 
 }
