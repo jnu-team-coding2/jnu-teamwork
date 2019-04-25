@@ -7,7 +7,7 @@ import chrriis.common.UIUtils;
 import chrriis.dj.nativeswing.swtimpl.NativeInterface;
 import chrriis.dj.nativeswing.swtimpl.components.JWebBrowser;
 public class Forum extends JPanel{
-	
+
     class requestforum extends JPanel{
         //内部类继承JPanel，进行浏览器嵌入
         public  requestforum(){
@@ -30,7 +30,7 @@ public class Forum extends JPanel{
     public Forum(JPanel area) {
         System.out.println("forum");
         SwingUtilities.invokeLater(new Runnable() {
-        	 @Override
+            @Override
             public void run() {
                 area.add(new requestforum(),BorderLayout.CENTER);
             }

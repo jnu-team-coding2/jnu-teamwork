@@ -4,12 +4,16 @@ import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
+import java.awt.Graphics;
 import java.awt.GridBagLayout;
+import java.awt.Image;
 import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.image.ImageObserver;
+import java.awt.image.ImageProducer;
 
 import javax.swing.Box;
 import javax.swing.ImageIcon;
@@ -47,6 +51,8 @@ public class AppFrame extends JFrame{
 
 	void launch() {
 		this.setLayout(new GridBagLayout());
+		this.setTitle("暨南大学学生功能管理系统");
+		this.setIconImage(new ImageIcon("./images/jnuicon.jpg").getImage());;
 		this.setExtendedState(JFrame.MAXIMIZED_BOTH);
 		container = this.getContentPane();
 
@@ -83,13 +89,13 @@ public class AppFrame extends JFrame{
 	//******************************
 	void addSpace() {
 		JPanel space = new JPanel();
-		space.setBackground(Color.WHITE);
+		space.setBackground(null);
 		menu.add(space, new GBC(GBC.REMAINDER, 2, 2).setFill(GBC.BOTH));
 	}
 
 	void addSearch() {
 		JPanel search = new JPanel();
-		search.setBackground(Color.WHITE);
+		search.setBackground(null);
 		ImageIcon searchIcon = new ImageIcon("./images/search.png");
 		searchButton = new JButton("搜索");
 		searchButton.setSize(10,15);
@@ -98,7 +104,7 @@ public class AppFrame extends JFrame{
 		searchText = new JTextField(8);
 
 
-		search.setLayout(new FlowLayout());
+		search.setLayout(new FlowLayout(FlowLayout.LEFT));
 		searchButton.setBorder(new EmptyBorder(0, 0, 0, 0));
 
 		searchButton.addActionListener(new ActionListener() {
@@ -118,7 +124,7 @@ public class AppFrame extends JFrame{
 		search.add(searchText);
 		search.add(searchButton);
 		addSpace();
-		menu.add(search, new GBC(GBC.REMAINDER, 3, 3).setFill(GBC.BOTH));
+		menu.add(search, new GBC(GBC.REMAINDER, 3, 3).setFill(GBC.BOTH).setAnchor(GBC.WEST));
 	}
 
 	void addGrade() {

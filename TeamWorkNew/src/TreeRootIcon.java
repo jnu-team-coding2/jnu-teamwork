@@ -17,14 +17,16 @@ public class TreeRootIcon {
 		jTree.setToggleClickCount(1);
 		addMouseListener();
 		DefaultTreeCellRenderer cellRenderer = (DefaultTreeCellRenderer) jTree.getCellRenderer();
-		ImageIcon iconRight = new ImageIcon("./images/RightArrow.png");
-		Image imageRight = iconRight.getImage().getScaledInstance(cellRenderer.getFont().getSize(), cellRenderer.getFont().getSize(), iconRight.getImage().SCALE_DEFAULT);
-		iconRight = new ImageIcon(imageRight);
-		ImageIcon iconDown = new ImageIcon("./images/DownArrow.png");
-		Image imageDown = iconDown.getImage().getScaledInstance(cellRenderer.getFont().getSize(), cellRenderer.getFont().getSize(), iconDown.getImage().SCALE_DEFAULT);
-		iconDown = new ImageIcon(imageDown);
-		cellRenderer.setClosedIcon(iconRight);
-		cellRenderer.setOpenIcon(iconDown);
+		ImageIcon iconadd = new ImageIcon("./images/add.png");
+		Image imageadd = iconadd.getImage().getScaledInstance(cellRenderer.getFont().getSize(), cellRenderer.getFont().getSize(), iconadd.getImage().SCALE_DEFAULT);
+//		System.out.println(cellRenderer.getFont().getSize());
+		iconadd = new ImageIcon(imageadd);
+//		ImageIcon iconDown = new ImageIcon("./images/DownArrow.png");
+//		Image imageDown = iconDown.getImage().getScaledInstance(cellRenderer.getFont().getSize(), cellRenderer.getFont().getSize(), iconDown.getImage().SCALE_DEFAULT);
+//		iconDown = new ImageIcon(imageDown);
+		cellRenderer.setBackground(null);
+		cellRenderer.setOpenIcon(iconadd);
+		cellRenderer.setClosedIcon(iconadd);
 		cellRenderer.setLeafIcon(null);
 	}
 	
