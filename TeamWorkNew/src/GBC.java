@@ -1,6 +1,12 @@
 import java.awt.GridBagConstraints;
 import java.awt.Insets;
 
+
+//**********************
+//editor£ºzzf           *
+//¹¦ÄÜ£ºGribBag·â×°     	    *
+//**********************
+
 public class GBC extends GridBagConstraints {
 	   public GBC(int gridwidth, int gridheight, int weighty) {
 		  this.gridwidth = gridwidth;

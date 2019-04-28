@@ -8,6 +8,10 @@ import javax.swing.JTree;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeCellRenderer;
 
+//**********************
+//editor：zzf           *
+//功能：初始化树图标       	    *
+//**********************
 public class TreeRootIcon {
 	private JTree jTree;
 	private AppFrame appFrame;
@@ -15,6 +19,7 @@ public class TreeRootIcon {
 		this.jTree = jTree;
 		this.appFrame = appFrame;
 		jTree.setToggleClickCount(1);
+		jTree.setBackground(null);
 		addMouseListener();
 		DefaultTreeCellRenderer cellRenderer = (DefaultTreeCellRenderer) jTree.getCellRenderer();
 		ImageIcon iconadd = new ImageIcon("./images/add.png");
@@ -79,6 +84,9 @@ public class TreeRootIcon {
 						switch (nodestr) {
 							case "查看通知":
 								System.out.println("查看通知");
+								appFrame.getArea().removeAll();
+								appFrame.getArea().add(appFrame.informLayout(), BorderLayout.CENTER);
+								appFrame.getArea().revalidate();
 								break;
 						}
 						break;
