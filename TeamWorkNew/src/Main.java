@@ -7,7 +7,8 @@ public class Main {
 		NativeInterface.open();
 		//饭卡查询
 		new AppFrame().launch();
-		
+
 		NativeInterface.runEventPump();
+		//添加教务处
 	}
 }
