@@ -11,7 +11,7 @@ public class Main {
 		//修复bug
 		NativeInterface.runEventPump();
 
-		//论坛的功能的优化
+		//论坛的功能的优化。
 		//添加教务处，教务处功能更新
 	}
 }
