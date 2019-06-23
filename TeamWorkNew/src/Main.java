@@ -7,7 +7,8 @@ public class Main {
 		NativeInterface.open();
 		
 		new AppFrame().launch();
-		
+
 		NativeInterface.runEventPump();
+		//添加教务处
 	}
 }
