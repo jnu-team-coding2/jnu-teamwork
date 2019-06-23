@@ -3,7 +3,7 @@ import chrriis.dj.nativeswing.swtimpl.NativeInterface;
 
 public class Main {
 	public static void main(String[] args) {
-		UIUtils.setPreferredLookAndFeel();
+		UIUtils.setPreferredLookAndFeel();//电费
 		NativeInterface.open();
 		//饭卡查询
 		new AppFrame().launch();
