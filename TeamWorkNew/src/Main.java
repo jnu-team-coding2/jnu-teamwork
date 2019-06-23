@@ -8,7 +8,7 @@ public class Main {
 		//饭卡查询
 		new AppFrame().launch();//career
 
-		//修复bug
+		//修复bug。
 		NativeInterface.runEventPump();
 
 		//论坛网址炸了
