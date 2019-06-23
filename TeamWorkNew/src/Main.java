@@ -7,9 +7,10 @@ public class Main {
 		NativeInterface.open();
 		
 		new AppFrame().launch();
-		
+
 		NativeInterface.runEventPump();
 
 		//论坛的功能的优化
+		//添加教务处
 	}
 }
