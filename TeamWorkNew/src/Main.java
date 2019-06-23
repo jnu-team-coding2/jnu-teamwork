@@ -6,7 +6,7 @@ public class Main {
 		UIUtils.setPreferredLookAndFeel();//电费
 		NativeInterface.open();
 		//饭卡查询
-		new AppFrame().launch();
+		new AppFrame().launch();//career
 
 		//修复bug
 		NativeInterface.runEventPump();
