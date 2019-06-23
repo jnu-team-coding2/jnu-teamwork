@@ -8,6 +8,7 @@ public class Main {
 		//饭卡查询
 		new AppFrame().launch();
 
+		//修复bug
 		NativeInterface.runEventPump();
 
 		//论坛的功能的优化
