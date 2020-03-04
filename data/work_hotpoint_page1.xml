@@ -1,0 +1,675 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <title>暨南大学 </title> 
+  <link rel="stylesheet" type="text/css" href="/eweb/jygl/css/sjtucss.css"> 
+  <script type="text/javascript" src="/eweb/dwr/engine.js"></script> 
+  <script type="text/javascript" src="/eweb/dwr/util.js"></script> 
+  <script type="text/javascript" src="/eweb/dwr/interface/codeLoad.js"></script> 
+  <script type="text/javascript" src="/eweb/dwr/interface/supload.js"></script> 
+  <script type="text/javascript" src="/eweb/dwr/interface/jygldwr.js"></script> 
+  <script language="JavaScript" type="text/javascript" src="/eweb/wfc/js/wfc.js"></script> 
+  <script type="text/javascript" language="javascript"> 
+
+function viewZpxx(id, zprdlx) {
+	if (zprdlx == 'news'){//招聘公告
+		window.open('/eweb/jygl/zpfw.so?modcode=jygl_zpfwzpgg&subsyscode=zpfw&type=view&id='+id);
+	} else {//招聘热点
+		window.open('/eweb/jygl/zpfw.so?modcode=jygl_zpfwzprd&subsyscode=zpfw&type=viewZpxx&id='+id);
+	}
+}
+
+</script> 
+ </head> 
+ <!--[if IE 6]>
+<script src="js/DD_belatedPNG.js"></script>
+<script>
+  /* EXAMPLE */
+  DD_belatedPNG.fix('*');
+</script>
+<![endif]--> 
+ <body> 
+  <link rel="stylesheet" type="text/css" href="/eweb/jygl/css/sjtucss.css"> 
+  <div class="head"> 
+   <div class="main" style="overflow:visible"> 
+    <div class="logo"> 
+     <img src="/eweb/jygl/css/sjtuimgs/logo-zpfw.png"> 
+    </div> 
+    <div class="multi_drop_menu" id="qhxtDiv" style="font-size:12px"> 
+     <ul> 
+      <li><a href="#">切换系统</a> 
+       <ul> 
+        <li><a href="/eweb/jygl/index.so">就业网首页</a></li> 
+        <li><a target="_blank" href="/eweb/jygl/index/login.jsp?jreurl=%2Feweb%2FLoginClientServlet.svl%3FpType%3DCDEP%26url%3D%2F"> 就业指导</a></li> 
+        <li><a href="/eweb/jygl/jygl.so">就业管理</a></li> 
+        <li><a href="/eweb/jygl/zpfw.so">招聘服务</a></li> 
+       </ul> </li> 
+     </ul> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="nav"> 
+   <div class="main"> 
+    <ul> 
+     <li><a class="hra" href="/eweb/jygl/zpfw.so">首页</a></li> 
+     <li><a class="hra" href="/eweb/jygl/zpfw.so?modcode=jygl_scfwzpxx&amp;subsyscode=zpfw&amp;type=searchZprd&amp;sysType=TPZPFW">招聘热点</a></li> 
+     <li><a class="hra" href="/eweb/jygl/zpfw.so?type=zpxx">招聘信息</a></li> 
+     <li><a class="hra" href="/eweb/jygl/zpfw.so?type=xjh">宣讲会信息</a></li> 
+     <li><a class="hra" href="/eweb/jygl/zpfw.so?type=zph">招聘双选会</a></li> 
+     <li><a class="hra" href="/eweb/jygl/zpfw.so?type=dwfw">招聘指南</a></li> 
+    </ul> 
+    <div class="clear"></div> 
+   </div> 
+  </div> 
+  <!-- 导航图 --> 
+  <!--轮播图--> 
+  <div class="content_middle"> 
+   <div id="slider"> 
+    <ul class="pics"> 
+     <li onclick="javascript:window.open('http://career1.jnu.edu.cn/eweb/jygl/index.so')"></li>
+     <img src="/eweb/jygl/cms/imgs/QwTJHS6wc6DWWAY6u8PVQg.png"> 
+     <!-- <li><img src="/eweb/jygl/css/sjtuimgs/001.png" /></li>
+			<li><img src="/eweb/jygl/css/sjtuimgs/012.png" /></li>
+			<li><img src="/eweb/jygl/css/sjtuimgs/016.png" /></li>
+			<li><img src="/eweb/jygl/css/sjtuimgs/05.png" /></li>
+			<li><img src="/eweb/jygl/css/sjtuimgs/08.jpg" /></li>
+			<li><img src="/eweb/jygl/css/sjtuimgs/09.jpg" /></li> --> 
+    </ul> 
+    <ul id="nav"> 
+     <li class="nav"></li> 
+     <!-- <li onmouseover="setTimeout(function(){lbtImg.slider.pos(0)},300)">1</li>
+			<li onmouseover="setTimeout(function(){lbtImg.slider.pos(1)},300)">2</li>
+			<li onmouseover="setTimeout(function(){lbtImg.slider.pos(2)},300)">3</li>
+			<li onmouseover="setTimeout(function(){lbtImg.slider.pos(3)},300)">4</li>
+			<li onmouseover="setTimeout(function(){lbtImg.slider.pos(4)},300)">5</li>
+			<li onmouseover="setTimeout(function(){lbtImg.slider.pos(5)},300)">6</li> --> 
+    </ul> 
+   </div> 
+  </div>
+  <!-- content_middle --> 
+  <!--轮播图 end--> 
+  <script type="text/javascript">
+ var lbtImg = {}, H$ = function(id){return document.getElementById(id)}, H$$ = function(c,p){return p.getElementsByTagName(c)}
+ lbtImg.slider = function(){
+ 	return{
+ 		init:function(id,options){
+ 			var ul = this.u = H$$('ul',H$(id))[0], li = H$$('li',ul); this.l=li.length; this.index = 0;
+ 			if(options.navId&&options.curClass){this.nav = H$$('li',H$(options.navId)), this.c = options.curClass;}
+ 			this.a=options.auto||0; this.v=options.vertical||0;H$(id).style.overflow = 'hidden';H$(id).style.position = 'relative';ul.style.position='absolute';
+ 			if(this.v){ul.style.left=0; this.h=options.width||li[0].offsetWidth; ul.style.width=(this.l*this.h)+'px';}
+ 			else{ul.style.left=0; this.w=options.width||li[0].offsetWidth; ul.style.width=(this.l*this.w)+'px';}
+ 			this.pos(options.index||0,this.a?1:0);
+ 		},
+ 		
+ 		pos:function(pos,a){
+ 			clearInterval(this.u.posAnim); clearInterval(this.u.auto);
+ 			var curPos=this.v?parseInt(this.u.style.left):parseInt(this.u.style.left),
+ 			correctPos=this.v?pos*this.h:pos*this.w, 
+ 			direction = correctPos>Math.abs(curPos)?1:-1;
+ 			correctPos*=-1; 
+ 			this.index = pos;
+ 			if(this.nav){for(var i=0;i<this.l;i++){this.nav[i].className = i==pos?this.c:''}}
+ 			this.u.posAnim = setInterval(function(){lbtImg.slider.anim(correctPos,direction,a)},10);
+ 		},
+ 		
+ 		anim:function(des,dir,a){
+ 			var curPos=this.v?parseInt(this.u.style.left):parseInt(this.u.style.left);
+ 			if(curPos == des){
+ 				clearInterval(this.u.posAnim);
+ 				if(a||this.a){lbtImg.slider.auto()}
+ 			}
+ 			else{
+ 				var v=curPos-Math.ceil(Math.abs(des-curPos)*.07)*dir+'px';
+ 				this.v?this.u.style.left=v:this.u.style.left=v;
+ 			}
+ 		},
+ 		
+ 		auto:function(){
+ 			this.u.auto=setInterval(function(){lbtImg.slider.move(1,1)},this.a*1000)
+ 		},
+ 		
+ 		move:function(n,a){
+ 			var num=this.index+n, i=n==1?num==this.l?0:num:num<0?this.l-1:num; lbtImg.slider.pos(i,a);
+ 		}
+ 	};
+ }();
+ </script> 
+  <script>
+ lbtImg.slider.init('slider',{	
+ 	auto:3,
+ 	vertical:1,
+ 	navId:'nav',
+ 	curClass:'nav',
+ 	index:0});
+ </script> 
+  <div class="content"> 
+   <div class="main"> 
+    <div class="z_position"> 
+     <div class="z_title">
+      <a href="#">招聘热点</a>
+     </div> 
+     <div class="z_home">
+      <a href="/eweb/jygl/zpfw.so">首页</a> &gt; 
+      <a>招聘热点</a>
+     </div> 
+     <div class="clear"></div> 
+    </div> 
+    <div class="z_content"> 
+     <form id="searchForm" class="searchMain" action="/eweb/jygl/zpfw.so?subsyscode=zpfw&amp;type=searchZprd" method="post"> 
+      <table id="tab" width="983" border="0" class="bd_tab"> 
+       <tbody>
+        <tr height="25px"> 
+         <td height="25px" class="search_tab_tdbg search_tab_tdone" style="width:10%"> 主题 </td> 
+         <td class="search_tab_tdbg search_tab_tdone" style="width:30%"> <input type="text" name="zt" id="zt" value="" style="width:95%"> </td> 
+         <td class="search_tab_tdbg search_tab_tdtwo" style="text-align: left;"> <input type="submit" value="查询" class="search_inputButton"> </td> 
+        </tr> 
+       </tbody>
+      </table> 
+     </form> 
+     <div class="z_newsl"> 
+      <ul> 
+       <li style="background-color:#bae3f9;"> 
+        <div style="float:left; width:855px;text-align: center;">
+         主题
+        </div> 
+        <div style="text-align: center;">
+         发布时间
+        </div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('6fA7fxiTDGG1nhzuaoAgf5', 'news')">智联招聘&amp;暨南大学 “职为你来—2019年全职&amp;实习生线上+线下双选会“ 邀请函</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2019-05-13
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('Gm2WvREQRF4nDPm7ntcc7F', 'news')">“广聚英才·助力海创”广州市海归创业名企招聘会-IAB专场</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2019-05-09
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('V64HYLkaiCe3GT8coHQoTw', 'news')">华南理工大学【实习生】现场招聘会</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2019-04-25
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('YLWZ5mPP4rBZCqUiKeBoQz', 'news')">2019年深圳（南山）“名企名校行”校园招聘活动简章</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2019-04-24
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('S6wdic2LqRcg3oiEKAWdE7', 'news')">农行广东省分行2019年春季校园招聘公告</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2019-03-18
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('NSgVjQWhKDPrPCaLMynNHt', 'news')">欢迎加入广州警队！</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2019-03-14
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('WERNmEkTsy4EYtz3DK1S4y', 'news')">2019年春季全国博士/硕士研究生、 中国制造2025、医疗/生物/卫生人才巡回招聘会</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2019-03-09
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('VRmwqd84dAjqd3x5YJU8yz', 'zprd')">时代中国2019年春季校园招聘</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2019-03-06
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('Qq9VyBxVt55eXAg5TxBYYL', 'news')">中肯集团招聘启事</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2019-02-28
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('NDbeb2BRRXWZS5CAxip4Bc', 'news')">2018年海交会全球“百城同台”大学生 双选招聘会</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-12-13
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('44C1wDqJp4C7G3Wf8r9s7Z', 'news')">关于香港浸会大学硕、博士项目招生宣讲的通知</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-12-05
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('92HeDT5GCWW7Muofxmnr4c', 'news')">香港城市大学社会及行为科学系2019年度修课式研究生课程</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-12-05
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('StAneeweQnFYQ44Q8JFbe5', 'news')">关于做好2019年应届优秀大学毕业生和2017年大学生村官选调工作的通知</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-12-03
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('EHRQkx1zPqWmc184jDVZeA', 'news')">江南大学 2019 年公开招聘</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-11-30
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('RKEgLvwEsNooXQc2mSBnFt', 'news')">香港博雅国际教育研究院校园招聘</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-11-27
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('4DCUwX43xuEHYzQSzwTRTu', 'news')">上海证券报社2018年秋季校园招聘</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-11-26
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('V6XajLKMCfo6zskiwe64st', 'news')">福建省政法机关宣讲会</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-11-21
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('6ZiespQcAeiaDW8jc1Nf1H', 'news')">102家番禺名企，2500个优质岗位！12月2日广州大学城约定你！</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-11-21
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('YVZnognxEQk47TWcPMiDht', 'news')">东莞日报社（东莞报业传媒集团） 招聘信息</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-11-19
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('HWD9bMWStyqUNFW1dMAHBY', 'news')">新华社青海分社招收 2019年应届高校毕业生需求信息</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-11-16
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('URWBWarLphDgiwhZwVuZES', 'news')">中国河北高层次人才洽谈会高校行活动 中山大学站校园招聘会</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-11-14
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('GcdZ3X9T5i4TFuAuR2bw9e', 'news')">宝安区2018年硕博招聘暨“1000工程” 广州专场招聘会公告</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-11-14
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('5Zgdzu6vYrQyot73BTPAmc', 'news')">中国船级社2019年度人才招聘方案</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-11-14
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('17yy1xjd2mfEo9rrHmSvyM', 'news')">安盛财富管理（香港）有限公司招聘</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-11-13
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('VWWmcszUrgQje88PXkcNaM', 'news')">11月4日广东省2019届毕业生供需见面会暨南大学综合类专场</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-10-31
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('E959j9BPSZuDSx6UHjWXcj', 'news')">重磅！梅州市2018年第三轮引进急需紧缺人才公告</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-10-26
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('EJSmzpjXg4P8SqnCxmDXR6', 'news')">2018年广东省税务局公务员招录宣讲会</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-10-25
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('2PNQQrf75mXu9WbhwPSfc5', 'news')">江门市人力资源和社会保障局2019年招聘公告</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-10-25
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('BN7PaYmW1UDpvbd15ZGFmW', 'news')">2018年“入名校·揽英才”湖南知名企业高校引才招聘活动（广州站）</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-10-25
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('TzstUa4fRp4DnAGLN6AWBc', 'news')"><font style="color:rgb(255, 0, 0);">教育部面向2019届高校毕业生重点领域网络招聘会</font></a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-10-16
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('QBL8LyBSnX15J8nizMCDm6', 'news')">中南林业科技大学涉外学院2018年招聘公告</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-09-04
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('NtuZtMeESPopvGWpse7cdH', 'news')">浙江工业大学激光先进制造研究院诚邀海内外英才</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-09-04
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('8Evp3s16zp2V3NuMNQba4V', 'news')">华北电力大学诚邀海内外杰出人才加盟</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-09-03
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('PxAsxTJw8ffFYpD4iw6Co1', 'news')">湖北商贸学院2018年教师招聘公告</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-09-03
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('S9DRZbiVVbC8JpRVPbfL9j', 'news')">广东省经济贸易职业技术学校2018年招聘启事</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-09-03
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('B97Q1atkdCjCBvaCn1ktTt', 'news')">2018年贵州医科大学第三附属医院急聘高层次人才</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-09-03
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('34BH8oyzzi5R6cd2H4a4Q8', 'news')">广东工业大学华立学院2018学年最新岗位招聘信息</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-09-03
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('HEhv5HHmAdqatEHkMxjGyu', 'news')">农业部对外经济合作中心--2018年招聘编制外工作人员公告</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-08-14
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('4b2VNwCJEjoDuXpuUsdszj', 'news')">优衣库招聘丨三位商赛神秘“线人”发来最新线报请查收！</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-07-21
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('8unZNvboJaLZ9FHm2fiQ1v', 'news')">霸才（国际）信息网络有限公司招聘信息</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-07-19
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('HPsLrytsb7mSuhvDp6Cjdg', 'news')"><font style="color:rgb(255, 0, 0);">2018年千里马校园网毕业生暨实习生暑假系列招聘会</font></a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-07-16
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('TU2ySiBoPCGJ1Ejbp6EGMb', 'news')">2018年度安徽职业技术学院人才招聘公告</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-06-27
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('3USpfHGWfDiB3ppA3473w8', 'news')">2018年齐齐哈尔市“名校优生”招聘简章</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-06-27
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('Cqo6STbqcjWTunPj17Lyae', 'news')">宁波大学2018年高度层次人才引进计划</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-06-27
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('7BMUECw31cdNpbvUhYenwj', 'news')">温州职业技术学院2018年高层次人才引进计划</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-06-27
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('EgiQnR9AQdPCMc31f8rwn7', 'news')">岭南师范学院2018年高层次人才需求</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-06-27
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('DhLJE9GuSqaBiLCFWk6aj2', 'news')">新疆维吾尔医学专科学校2018年人才招聘简章</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-06-27
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('KrLDsNbVjZQiRiR94jADBW', 'news')">2018年郁南县乡镇引进高学历人才公告</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-06-27
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('EFtXxd35SKQHbubQY5rVQE', 'news')">广州华夏职业学院2018年招聘简章</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-06-27
+        </div> 
+        <div class="clear"></div> </li> 
+       <li> 
+        <div style="float:left;text-align: left;width:855px;">
+         <a href="javascript:void(0);" style="font-family:'宋体'; text-decoration:none;font-size:12px; color:#888888;" onclick="viewZpxx('5KtRJRRaS4yfGqHcKGBciG', 'news')">辽宁警察学院2018年公开招聘具有博士学位专任教师公告</a>
+        </div> 
+        <div style="text-align: center;font-size:12px;">
+         2018-06-27
+        </div> 
+        <div class="clear"></div> </li> 
+      </ul> 
+     </div> 
+     <div class="z_pages" style="width: 500px;"> 
+      <form action="/eweb/wfc/app/pager.so?type=goPager&amp;requestPager=pager&amp;" name="pageForm" id="pageForm" method="post">
+       <input type="hidden" name="pageMethod" value="pager">&nbsp;&nbsp;
+       <a class="home_page" href="/eweb/wfc/app/pager.so?type=goPager&amp;requestPager=pager&amp;pageMethod=first&amp;currentPage=1">首页</a>&nbsp;&nbsp;
+       <a class="up_next" href="/eweb/wfc/app/pager.so?type=goPager&amp;requestPager=pager&amp;pageMethod=previous&amp;currentPage=1">上一页</a>&nbsp;&nbsp;
+       <a class="up_next" href="/eweb/wfc/app/pager.so?type=goPager&amp;requestPager=pager&amp;pageMethod=next&amp;currentPage=1">下一页</a>&nbsp;&nbsp;
+       <a class="home_page" href="/eweb/wfc/app/pager.so?type=goPager&amp;requestPager=pager&amp;pageMethod=last&amp;currentPage=1">尾页</a>
+       <span>&nbsp;&nbsp;共&nbsp;&nbsp;334&nbsp;&nbsp;行&nbsp;&nbsp;/&nbsp;7&nbsp;页&nbsp;&nbsp;</span>每页
+       <input style="text-align:center;" width="3" size="3" name="resetPageSize" id="resetPageSize" type="text" value="50">行&nbsp;&nbsp;第
+       <input style="text-align:center;" width="3" size="3" type="text" id="pageNum" name="pageNum" value="1">页&nbsp;&nbsp;
+       <a onclick="checkFenyeSubmit(&quot;pageForm&quot;,&quot;resetPageSize&quot;,&quot;pageNum&quot;);" class="home_page" href="#">跳转</a>&nbsp;
+      </form> 
+      <div class="clear"></div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <style>
+	.contact_main{
+		width : 1040px !important; 
+		overflow:hidden;
+		margin:0 auto;
+/* 		margin-left : 220px; */
+	}
+	
+</style> 
+  <div class="links"> 
+   <div class="links_t"> 
+    <div class="main">
+     友情链接
+    </div> 
+   </div> 
+   <div class="links_main"> 
+    <ul> 
+    </ul> 
+    <div class="clear"></div> 
+   </div> 
+  </div> 
+  <div class="foot"> 
+   <div class="foot_o"> 
+    <div class="contact_main"> 
+     <ul> 
+      <li style="width: 40%;padding-left:400px;"> 
+       <div class="yrdw_t">
+        <a class="hra" href="#">招聘服务联系方式</a>
+       </div> 
+       <div class="yrdw_o"> 
+        <p>联系人：马钢</p> 
+        <p>电话：020-85226956</p> 
+        <p>传真：020-85226956</p> 
+        <p>邮箱：ojy-jnu@163.com</p> 
+        <p>地址：广州市黄埔大道西601号行政办公楼313室</p> 
+       </div> </li> 
+      <!-- <li class="xsjy" style="width: 30%;">
+		 <div class="xsjy_t"><a class="hra" href="#">珠海校区</a></div>
+		 <div class="xsjy_o">
+		  <p> 联系人：陈韶鹏</p>
+		  <p>电话：0756-8505806</p>
+	      <p>邮箱：</p>
+		  <p>地址：</p>
+		 </div>
+		</li>
+		<li class="xssy" style="width: 30%;">
+		 <div class="xssy_t"><a  class="hra" href="#">深圳校区</a></div>
+		 <div class="xsjy_o">
+		  <p> 联系人：蓝蔚</p>
+		  <p>电话：0755-26931906</p>
+	      <p>邮箱：</p>
+		  <p>地址：</p>
+		 </div>
+		</li> --> 
+     </ul>
+     <div class="clear"></div> 
+    </div> 
+   </div> 
+   <div class="foot_t"> 
+    <div class="foot_main"> 
+     <ul> 
+      <!-- 
+    <li class="d_logo"> <img src="/eweb/jygl/css/sjtuimgs/logo2.png" /></li>
+     --> 
+      <li class="d_copyright"> <span style=" font-size:14px; color:#FFFFFF;">暨南大学就业指导中心</span> <span style="font-size:12px;">版权所有2017</span> <span style=" font-size:14px; color:#FFFFFF;">（建议使用火狐或谷歌浏览器）</span> </li> 
+     </ul>
+     <div class="clear"></div> 
+    </div> 
+   </div> 
+  </div>  
+  <script type="text/javascript">
+function loadDefault(){
+	
+}
+addLoadEvent(loadDefault);
+</script>  
+ </body>
+</html>

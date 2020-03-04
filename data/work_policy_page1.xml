@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+  <title>暨南大学 </title> 
+  <link rel="stylesheet" href="/eweb/jygl/index/css/index_style.css" type="text/css"> 
+  <link rel="stylesheet" href="/eweb/jygl/index/css/styleFront.css" type="text/css"> 
+  <script language="JavaScript" type="text/javascript" src="/eweb/wfc/js/wfc.js"></script> 
+  <script type="text/javascript" src="/eweb/jygl/index/js/My97DatePicker/WdatePicker.js"></script> 
+  <script type="text/javascript" src="/eweb/jygl/index/news/list.js"></script> 
+ </head> 
+ <body> 
+  <script language="JavaScript" type="text/javascript">
+	function testAuto(thisId, needLeng) {
+		var element = document.getElementById(thisId);
+		var nowLeng = element.innerText.length;
+		if (nowLeng > needLeng) {
+			var nowWord = element.innerText.substr(0, needLeng) + '...';
+			element.innerHTML = nowWord;
+		}
+	}
+	function picDispatcher(url){
+		if(url!=null&&url!="undefined"&&url!=""&&url!="null"){
+			window.open(url);
+		}
+	}
+	// 退出登陆
+	function loginout(){
+		window.location.href = "/eweb/jygl/tpsjtu/logout.jsp";
+	}
+	//搜索
+	function queryInfo(){
+		var strTitle = document.getElementById("strTitle").value;
+		if(strTitle!=null && strTitle.length>0){
+			var url ="/eweb/jygl/index.so?modcode=jyw_xwgg&subsyscode=jyw&type=searchNews&newsType=jyw&title=" + strTitle;
+			window.open(url);
+		}
+	}
+	function openLink(obj){
+    	if(obj.value !='#'){
+    		window.open(obj.value);
+    	}
+    }
+</script> 
+  <!--头部--> 
+  <div class="ind_top"> 
+   <ul class="ind_top_q"> 
+    <li class="ind_top_l"> <a href="https://www.jnu.edu.cn/7290/list.htm">学院介绍</a> <a href="/eweb/jygl/index.so?modcode=jyw_xwgg&amp;subsyscode=jyw&amp;type=searchNews&amp;newsType=syxx">生源信息</a> <font style="color:#ffffff; ">您是第null位访问者！</font> </li> 
+    <li class="ind_top_c"> <a href="http://www.jnu.edu.cn/">学校网站</a> <a href="http://www.jnu.edu.cn/">离校系统</a> <input type="text" class="search_input" id="strTitle" maxLength="30"> <input type="button" class="search_btn" onclick="queryInfo()"> </li> 
+   </ul> 
+  </div> 
+  <!--头部 END--> 
+  <!--导航--> 
+  <div class="nav_wrap"> 
+   <div class="nav"> 
+    <ul class="nav_logo w1000_margin0">
+     <a href="/eweb/jygl/index.so"><img class="logo" src="/eweb/jygl/css/sjtuimgs/logo-index.png"></a>
+    </ul> 
+    <div class="hr"></div> 
+    <ul class="nav_dh w1000_margin0"> 
+     <li class="dh_left" style="width: 600px;"> 
+      <div class="dh_q"> 
+       <a class="nav_tit" target="_blank" href="/eweb/jygl/jygl.so">就业管理</a> 
+      </div> 
+      <div class="dh_q"> 
+       <a class="nav_tit" target="_blank" href="/eweb/jygl/zpfw.so">招聘服务</a> 
+      </div> 
+      <div class="dh_q"> 
+       <a class="nav_tit" target="_blank" href="http://jnu.njcedu.com">就业指导</a> 
+      </div> 
+      <div class="dh_q"> 
+       <a class="nav_tit" target="_blank" href="https://cyxy.jnu.edu.cn/">创业教育</a> 
+      </div> 
+      <div class="dh_q"> 
+       <a class="nav_tit" target="_blank" href="https://career.jnu.edu.cn/eweb/jygl/jygl.so?modcode=jygl_jyglxgxz&amp;subsyscode=jygl&amp;type=searchNews&amp;newsType=xgxz">下载中心</a> 
+      </div> 
+      <div class="dh_q"> 
+       <a class="nav_tit" target="_blank" href="/eweb/jygl/index.so?type=gywm">关于我们</a> 
+      </div> </li> 
+     <li class="dh_right"> <span class="dh_time" id="myDate"></span> <span class="dh_week" id="myWeek"></span> <script type="text/javascript">
+           		var myDate=new Date();
+           		document.getElementById("myDate").innerHTML=myDate.getFullYear()+"年"+(myDate.getMonth()+1)+"月"+myDate.getDate()+"日";
+           		var day =myDate.getDay();
+           		var week ="";
+           		if(day==0){
+           			week ="星期日";
+           		}
+           		if(day==1){
+           			week ="星期一";
+           		}
+           		if(day==2){
+           			week ="星期二";
+           		}
+           		if(day==3){
+           			week ="星期三";
+           		}
+           		if(day==4){
+           			week ="星期四";
+           		}
+           		if(day==5){
+           			week ="星期五";
+           		}
+           		if(day==6){
+           			week ="星期六";
+           		}
+           		document.getElementById("myWeek").innerHTML=week;
+           	</script> <select class="iselect" onchange="openLink(this)" style="color: red;"> <option value="#">快速通道</option> <option value="https://www.jnu.edu.cn/?">学校首页 </option> <option value="http://202.116.17.176/byxx/login.asp">档案馆 </option> <option value="http://zsb.jnu.edu.cn/">招生办 </option> <option value="https://gs.jnu.edu.cn/">研究生院 </option> <option value="https://www.jnu.edu.cn/7290/list.htm">院系导航 </option> <option value="http://gj.ncss.org.cn/index.html">高校毕业生到国际组织实习任职信息服务平台 </option> <option value="https://career.jnu.edu.cn/eweb/servlet/uploadpreview?refid=D2rphYyFpJVvUZqREgXADN&amp;reftype=cntnews">暨南大学2018届毕业生就业实用手册 </option> <option value="https://career.jnu.edu.cn/eweb/jygl/jygl.so?modcode=jygl_jygljylc&amp;subsyscode=jygl&amp;type=view&amp;id=EKDcKfDjcjifxpgGQRsCAS">就业流程 </option> <option value="https://career.jnu.edu.cn/eweb/jygl/jygl.so?modcode=jygl_jyglxgxz&amp;subsyscode=jygl&amp;type=searchNews&amp;newsType=xgxz">下载中心 </option> <option value="https://career.jnu.edu.cn/eweb/jygl/zpfw.so?type=dwfw">用人单位招聘指南 </option> </select> <select class="iselect" onchange="openLink(this)"> <option value="#">友情链接</option> </select> </li> 
+    </ul> 
+   </div> 
+  </div> 
+  <!--导航 END--> 
+  <!--公告新闻--> 
+  <div class="center_sy"> 
+   <div class="sy_right"> 
+    <div class="sy_content"> 
+     <ul class="sy_inf"> 
+      <li> <a target="_blank" href="/eweb/jygl/index.so?modcode=jyw_xwgg&amp;subsyscode=jyw&amp;type=view&amp;newsType=dfzc&amp;id=BP1Kz2fhAAcasfxpGbUgE"><span>暨南大学2018年毕业生就业创业风采集</span></a> <span class="gg_year">2018-12-19</span> </li> 
+      <li> <a target="_blank" href="/eweb/jygl/index.so?modcode=jyw_xwgg&amp;subsyscode=jyw&amp;type=view&amp;newsType=dfzc&amp;id=GJbTX5W8sXwZPi9zDMRen3"><span>征途浩淼，踏浪前行-暨南大学2017年学生就业创业风采集</span></a> <span class="gg_year">2018-12-19</span> </li> 
+      <li> <a target="_blank" href="/eweb/jygl/index.so?modcode=jyw_xwgg&amp;subsyscode=jyw&amp;type=view&amp;newsType=dfzc&amp;id=D2rphYyFpJVvUZqREgXADN"><span>2019届毕业生就业实用手册</span></a> <span class="gg_year">2018-11-28</span> </li> 
+      <li> <a target="_blank" href="/eweb/jygl/index.so?modcode=jyw_xwgg&amp;subsyscode=jyw&amp;type=view&amp;newsType=dfzc&amp;id=MWzvzLAFEnNGHzg51esdb6"><span>2018届毕业生就业实用手册</span></a> <span class="gg_year">2018-11-28</span> </li> 
+      <li> <a target="_blank" href="/eweb/jygl/index.so?modcode=jyw_xwgg&amp;subsyscode=jyw&amp;type=view&amp;newsType=dfzc&amp;id=Xpq5dtTCMDfuZScAcZGo2J"><span>就业政策——报到证</span></a> <span class="gg_year">2017-11-15</span> </li> 
+      <li> <a target="_blank" href="/eweb/jygl/index.so?modcode=jyw_xwgg&amp;subsyscode=jyw&amp;type=view&amp;newsType=dfzc&amp;id=Kh3z4SMmh3XMWj8QDdC2Qj"><span>就业政策之个人简历</span></a> <span class="gg_year">2017-04-20</span> </li> 
+      <li> <a target="_blank" href="/eweb/jygl/index.so?modcode=jyw_xwgg&amp;subsyscode=jyw&amp;type=view&amp;newsType=dfzc&amp;id=KAHkJQysHwiATCMGNXbf7i"><span>就业政策百问（10）</span></a> <span class="gg_year">2017-04-20</span> </li> 
+      <li> <a target="_blank" href="/eweb/jygl/index.so?modcode=jyw_xwgg&amp;subsyscode=jyw&amp;type=view&amp;newsType=dfzc&amp;id=A68VnoAj4cCEFShVreyttJ"><span>就业政策百问（2）</span></a> <span class="gg_year">2017-04-20</span> </li> 
+      <li> <a target="_blank" href="/eweb/jygl/index.so?modcode=jyw_xwgg&amp;subsyscode=jyw&amp;type=view&amp;newsType=dfzc&amp;id=S9Uko2iZYdZJ5UzE6AgoZL"><span>就业政策百问（三）</span></a> <span class="gg_year">2017-04-20</span> </li> 
+      <li> <a target="_blank" href="/eweb/jygl/index.so?modcode=jyw_xwgg&amp;subsyscode=jyw&amp;type=view&amp;newsType=dfzc&amp;id=S1SPLpK1U7GPEeZyBu9wgf"><span>就业政策之就业方案</span></a> <span class="gg_year">2017-04-20</span> </li> 
+     </ul> 
+     <div id="fenye" class="news_pages" style="width: 500px;"> 
+      <form action="/eweb/wfc/app/pager.so?type=goPager&amp;requestPager=pager&amp;" name="pageForm" id="pageForm" method="post">
+       <input type="hidden" name="pageMethod" value="pager">&nbsp;&nbsp;
+       <a class="home_page" href="/eweb/wfc/app/pager.so?type=goPager&amp;requestPager=pager&amp;pageMethod=first&amp;currentPage=1">首页</a>&nbsp;&nbsp;
+       <a class="up_next" href="/eweb/wfc/app/pager.so?type=goPager&amp;requestPager=pager&amp;pageMethod=previous&amp;currentPage=1">上一页</a>&nbsp;&nbsp;
+       <a class="up_next" href="/eweb/wfc/app/pager.so?type=goPager&amp;requestPager=pager&amp;pageMethod=next&amp;currentPage=1">下一页</a>&nbsp;&nbsp;
+       <a class="home_page" href="/eweb/wfc/app/pager.so?type=goPager&amp;requestPager=pager&amp;pageMethod=last&amp;currentPage=1">尾页</a>
+       <span>&nbsp;&nbsp;共&nbsp;&nbsp;23&nbsp;&nbsp;行&nbsp;&nbsp;/&nbsp;3&nbsp;页&nbsp;&nbsp;</span>每页
+       <input style="text-align:center;" width="3" size="3" name="resetPageSize" id="resetPageSize" type="text" value="10">行&nbsp;&nbsp;第
+       <input style="text-align:center;" width="3" size="3" type="text" id="pageNum" name="pageNum" value="1">页&nbsp;&nbsp;
+       <a onclick="checkFenyeSubmit(&quot;pageForm&quot;,&quot;resetPageSize&quot;,&quot;pageNum&quot;);" class="home_page" href="#">跳转</a>&nbsp;
+      </form> 
+      <div class="clear"></div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="clear"></div> 
+  </div> 
+  <!--底部--> 
+  <div class="foot"> 
+   <ul class="footer_content"> 
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;版权所有：暨南大学就业指导中心 2017 Copyright Jinan University All rights reserved</li> 
+    <li> 地址：广东省广州市黄埔大道西601号 &nbsp;&nbsp;&nbsp;&nbsp; </li> 
+   </ul> 
+  </div> 
+  <!--底部 END--> 
+  <script type="text/javascript">
+var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cspan style='display:none;' id='cnzz_stat_icon_1256277512'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1256277512' type='text/javascript'%3E%3C/script%3E"));
+</script>   
+ </body>
+</html>

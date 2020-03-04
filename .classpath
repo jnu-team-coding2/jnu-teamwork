@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="staticjar/djnativeswing-swt.jar"/>
+	<classpathentry kind="lib" path="staticjar/hamcrest-core-1.3.rc2-sources.jar"/>
+	<classpathentry kind="lib" path="staticjar/hamcrest-core-1.3.rc2.jar"/>
+	<classpathentry kind="lib" path="staticjar/hamcrest-library-1.3.jar"/>
+	<classpathentry kind="lib" path="staticjar/junit-4.11.jar"/>
+	<classpathentry kind="lib" path="staticjar/org.eclipse.swt.win32.win32.x86_64-4.3.jar"/>
+	<classpathentry kind="lib" path="staticjar/jsoup-1.11.3.jar"/>
+	<classpathentry kind="lib" path="staticjar/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="staticjar/djnativeswing.jar"/>
+	<classpathentry kind="lib" path="staticjar/freemarker.jar"/>
+	<classpathentry kind="lib" path="staticjar/beautyeye_lnf.jar"/>
+	<classpathentry kind="lib" path="staticjar/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="staticjar/commons-beanutils-1.9.2.jar"/>
+	<classpathentry kind="lib" path="staticjar/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="staticjar/fontbox-2.0.9.jar"/>
+	<classpathentry kind="lib" path="staticjar/ghost4j-1.0.1.jar"/>
+	<classpathentry kind="lib" path="staticjar/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="staticjar/httpclient-4.5.8.jar"/>
+	<classpathentry kind="lib" path="staticjar/httpcore-4.4.11.jar"/>
+	<classpathentry kind="lib" path="staticjar/itext-2.1.7.jar"/>
+	<classpathentry kind="lib" path="staticjar/jai-imageio-core-1.4.0.jar"/>
+	<classpathentry kind="lib" path="staticjar/jbig2-imageio-3.0.0.jar"/>
+	<classpathentry kind="lib" path="staticjar/jboss-vfs-3.2.12.Final.jar"/>
+	<classpathentry kind="lib" path="staticjar/jcl-over-slf4j-1.7.25.jar"/>
+	<classpathentry kind="lib" path="staticjar/jna-4.1.0.jar"/>
+	<classpathentry kind="lib" path="staticjar/jul-to-slf4j-1.7.25.jar"/>
+	<classpathentry kind="lib" path="staticjar/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="staticjar/lept4j-1.6.4.jar"/>
+	<classpathentry kind="lib" path="staticjar/log4j-over-slf4j-1.7.25.jar"/>
+	<classpathentry kind="lib" path="staticjar/logback-classic-1.2.3.jar"/>
+	<classpathentry kind="lib" path="staticjar/logback-core-1.2.3.jar"/>
+	<classpathentry kind="lib" path="staticjar/opencv-410.jar"/>
+	<classpathentry kind="lib" path="staticjar/pdfbox-2.0.9.jar"/>
+	<classpathentry kind="lib" path="staticjar/pdfbox-tools-2.0.9.jar"/>
+	<classpathentry kind="lib" path="staticjar/slf4j-api-1.7.25.jar"/>
+	<classpathentry kind="lib" path="staticjar/tess4j-3.4.8.jar"/>
+	<classpathentry kind="lib" path="staticjar/xmlgraphics-commons-1.5.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

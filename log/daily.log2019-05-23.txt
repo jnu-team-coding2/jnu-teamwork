@@ -1,0 +1,66 @@
+2019-05-23 00:19:41 [Crawling.CrawMain]-[INFO](241) 读取招聘热点
+2019-05-23 00:19:42 [Crawling.CrawMain]-[INFO](275) 读取政策
+2019-05-23 00:19:43 [Crawling.CrawMain]-[INFO](306) 读取日历信息
+2019-05-23 00:19:44 [Crawling.CrawMain]-[INFO](210) 读取通知广告
+2019-05-23 00:19:44 [Crawling.CrawMain]-[INFO](179) 读取动态新闻
+2019-05-23 00:41:09 [Main]-[DEBUG](13) 程序开始运行
+2019-05-23 00:41:15 [IconPackaging.TreeRootIcon]-[ERROR](89) 个人信息未填写完全
+2019-05-23 00:41:16 [IconPackaging.TreeRootIcon]-[DEBUG](273) 点击个人信息管理
+2019-05-23 00:41:25 [IconPackaging.TreeRootIcon]-[ERROR](89) 个人信息未填写完全
+2019-05-23 00:41:57 [IconPackaging.TreeRootIcon]-[DEBUG](75) 点击查询成绩
+2019-05-23 00:41:58 [Net.Net]-[INFO](20) 联网成功
+2019-05-23 00:42:44 [IconPackaging.TreeRootIcon]-[DEBUG](75) 点击查询成绩
+2019-05-23 00:42:44 [Net.Net]-[INFO](20) 联网成功
+2019-05-23 00:52:18 [freemarker.cache]-[DEBUG](83) Could not find template in cache, creating new one; id=["LeaveApply.ftl"["zh_CN",utf-8,parsed] ]
+2019-05-23 00:52:18 [freemarker.cache]-[DEBUG](83) Compiling FreeMarker template "LeaveApply.ftl"["zh_CN",utf-8,parsed]  from "D:\\study\\团队项目开发\\代码\\最终\\1\\TeamWorkNew\\template\\LeaveApply.ftl"
+2019-05-23 00:53:36 [Crawling.CrawMain]-[INFO](241) 读取招聘热点
+2019-05-23 00:53:37 [Crawling.CrawMain]-[INFO](275) 读取政策
+2019-05-23 00:53:37 [Crawling.CrawMain]-[INFO](306) 读取日历信息
+2019-05-23 00:53:38 [Crawling.CrawMain]-[INFO](210) 读取通知广告
+2019-05-23 00:53:38 [Crawling.CrawMain]-[INFO](179) 读取动态新闻
+2019-05-23 00:54:14 [freemarker.cache]-[DEBUG](83) Could not find template in cache, creating new one; id=["LeaveApply.ftl"["zh_CN",utf-8,parsed] ]
+2019-05-23 00:54:14 [freemarker.cache]-[DEBUG](83) Compiling FreeMarker template "LeaveApply.ftl"["zh_CN",utf-8,parsed]  from "D:\\study\\团队项目开发\\代码\\最终\\1\\TeamWorkNew\\template\\LeaveApply.ftl"
+2019-05-23 00:58:19 [freemarker.cache]-[DEBUG](83) Could not find template in cache, creating new one; id=["LeaveApply.ftl"["zh_CN",utf-8,parsed] ]
+2019-05-23 00:58:19 [freemarker.cache]-[DEBUG](83) Compiling FreeMarker template "LeaveApply.ftl"["zh_CN",utf-8,parsed]  from "D:\\study\\团队项目开发\\代码\\最终\\1\\TeamWorkNew\\template\\LeaveApply.ftl"
+2019-05-23 00:58:47 [Main]-[DEBUG](13) 程序开始运行
+2019-05-23 00:58:59 [IconPackaging.TreeRootIcon]-[ERROR](89) 个人信息未填写完全
+2019-05-23 00:59:01 [IconPackaging.TreeRootIcon]-[DEBUG](273) 点击个人信息管理
+2019-05-23 00:59:04 [IconPackaging.TreeRootIcon]-[DEBUG](75) 点击查询成绩
+2019-05-23 00:59:05 [Net.Net]-[INFO](20) 联网成功
+2019-05-23 00:59:16 [IconPackaging.TreeRootIcon]-[DEBUG](96) 点击选课
+2019-05-23 00:59:17 [Net.Net]-[INFO](20) 联网成功
+2019-05-23 00:59:18 [IconPackaging.TreeRootIcon]-[DEBUG](123) 点击文档填写
+2019-05-23 00:59:29 [IconPackaging.TreeRootIcon]-[DEBUG](145) 点击查看通知
+2019-05-23 00:59:29 [Net.Net]-[INFO](20) 联网成功
+2019-05-23 00:59:29 [Crawling.CrawMain]-[INFO](62) 读取学校公告网站源码
+2019-05-23 00:59:31 [Frame.AppFrame]-[DEBUG](1385) 点击下一页
+2019-05-23 00:59:31 [Net.Net]-[INFO](20) 联网成功
+2019-05-23 00:59:31 [Crawling.CrawMain]-[INFO](62) 读取学校公告网站源码
+2019-05-23 00:59:32 [Frame.AppFrame]-[INFO](1213) 查看通知-校内通知
+2019-05-23 00:59:33 [Net.Net]-[INFO](20) 联网成功
+2019-05-23 00:59:33 [Crawling.CrawMain]-[INFO](92) 读取校内通知网站源码
+2019-05-23 00:59:40 [Frame.AppFrame]-[INFO](1234) 查看通知-每周会议
+2019-05-23 00:59:40 [Net.Net]-[INFO](20) 联网成功
+2019-05-23 00:59:40 [Crawling.CrawMain]-[INFO](123) 读取每周会议网站源码
+2019-05-23 00:59:41 [Frame.AppFrame]-[INFO](1213) 查看通知-校内通知
+2019-05-23 00:59:41 [Net.Net]-[INFO](20) 联网成功
+2019-05-23 00:59:41 [Crawling.CrawMain]-[INFO](92) 读取校内通知网站源码
+2019-05-23 00:59:42 [IconPackaging.TreeRootIcon]-[DEBUG](174) 点击就业信息查询
+2019-05-23 00:59:42 [Net.Net]-[INFO](20) 联网成功
+2019-05-23 00:59:42 [Crawling.CrawMain]-[INFO](179) 读取动态新闻
+2019-05-23 00:59:42 [Crawling.CrawMain]-[INFO](306) 读取日历信息
+2019-05-23 00:59:43 [Frame.AppFrame]-[INFO](1460) 查看就业信息-通知广告
+2019-05-23 00:59:43 [Net.Net]-[INFO](20) 联网成功
+2019-05-23 00:59:43 [Crawling.CrawMain]-[INFO](210) 读取通知广告
+2019-05-23 00:59:44 [Frame.AppFrame]-[INFO](1481) 查看就业信息-招聘热点
+2019-05-23 00:59:44 [Net.Net]-[INFO](20) 联网成功
+2019-05-23 00:59:44 [Crawling.CrawMain]-[INFO](241) 读取招聘热点
+2019-05-23 00:59:44 [Frame.AppFrame]-[INFO](1502) 查看就业信息-政策解读
+2019-05-23 00:59:44 [Net.Net]-[INFO](20) 联网成功
+2019-05-23 00:59:44 [Crawling.CrawMain]-[INFO](275) 读取政策
+2019-05-23 00:59:59 [IconPackaging.TreeRootIcon]-[DEBUG](209) 点击校园卡
+2019-05-23 00:59:59 [Net.Net]-[INFO](20) 联网成功
+2019-05-23 01:00:00 [IconPackaging.TreeRootIcon]-[DEBUG](229) 点击查询水电
+2019-05-23 01:00:00 [Net.Net]-[INFO](20) 联网成功
+2019-05-23 01:00:01 [IconPackaging.TreeRootIcon]-[DEBUG](252) 点击浏览论坛
+2019-05-23 01:00:01 [Net.Net]-[INFO](20) 联网成功

@@ -1,0 +1,578 @@
+<html>
+ <head>
+  <style type="text/css">
+<!--
+.navstyle {
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	line-height: 0.6cm;
+	color: #ff0000;
+}
+-->
+</style>  
+  <title>暨南大学教务处</title> 
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+  <link href="index10/css.css" type="text/css" rel="stylesheet">
+  <link href="index10/menu.css" type="text/css" rel="stylesheet"> 
+  <style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(index/bg.jpg);	
+}
+
+
+
+.index{
+	font-family: "汉鼎简粗宋";
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+}
+.unnamed1 {
+	font-family: "宋体";
+	font-size: 13px;
+	font-style: normal;
+	line-height: 0.8cm;
+	text-decoration: none;
+	color: #0066CC;
+}
+.unnamed10{
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	line-height: 0.8cm;
+	text-decoration: none;
+	color: #0066CC;
+}
+.unnamed2 {
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	line-height: 0.6cm;
+	text-decoration: none;
+	color: #0066CC;
+}
+.unnamed3 {
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	line-height: 0.7cm;
+	text-decoration: none;
+	color: #000000;
+}
+.new{
+	font-family: "宋体";
+	font-size: 10px;
+	font-style: normal;
+	line-height: 0.7cm;
+	text-decoration: none;
+	color: #000000;
+}
+
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+.STYLE2 {
+	font-weight: bold;
+	color: #00A1E9;
+}
+.unnamed4 {
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	line-height: 0.5cm;
+	font-weight: normal;
+}
+.STYLE20 {
+	COLOR: #ff3300
+}
+.style19 {color: #CC3300; font-weight: bold; font-family: "宋体"; font-size: 12px; }
+
+.left5 {
+	font-family: "宋体";
+	font-size: 13px;
+	
+	line-height: 0.7cm;
+	color: #000000;
+	text-decoration: none;
+	font-weight: normal;
+}
+.unnamed5 {
+	font-family: "黑体";
+	font-size: 20px;
+	font-style: normal;
+	line-height: 0.6cm;
+	font-weight: bolder;
+	color: #009999;
+}
+.unnamed6 {
+	font-family: "宋体";
+	font-size: 14px;
+	font-style: normal;
+	line-height: 0.5cm;
+	font-weight: bold;
+	color: #FF6600;
+}
+.unnamed51 {
+	font-family: "微软雅黑";
+	font-size: 18px;
+	font-style: normal;
+	line-height: 0.6cm;
+	font-weight: bolder;
+	color: #339;
+}
+
+-->
+</style> 
+ </head> 
+ <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"> 
+  <!-- Save for Web Slices (ziye14.psd) --> 
+  <table width="1024" height="1022" border="0" align="center" cellpadding="0" cellspacing="0" id="__01"> 
+   <tbody>
+    <tr> 
+     <td rowspan="7"> <img src="images143/ziye143_01.gif" width="23" height="1021" alt=""></td> 
+     <td colspan="10" rowspan="3"> <img src="images143/ziye143_02.gif" width="752" height="116" alt=""></td> 
+     <td colspan="3"> <img src="images143/ziye143_03.gif" width="235" height="73" alt=""></td> 
+     <td rowspan="7"> <img src="images143/ziye143_04.gif" width="14" height="1021" alt=""></td> 
+    </tr> 
+    <form method="post" name="myform" action="Result.asp"></form> 
+    <tr> 
+     <td width="153" height="33" colspan="2"><input name="keyword" type="text" value="输入关键字" size="21" maxlength="20"></td> 
+     <td width="82" height="33"> <input type="image" name="Submit2" src="images143/ziye143_06.gif" width="80" height="28"> </td> 
+    </tr>  
+    <tr> 
+     <td colspan="2"> <img src="images143/ziye143_07.gif" width="153" height="10" alt=""></td> 
+     <td> <img src="images143/ziye143_08.gif" width="82" height="10" alt=""></td> 
+    </tr> 
+    <tr> 
+     <td><a href="index.asp"><img src="images143/ziye143_09.gif" alt="" width="103" height="40" border="0"></a></td> 
+     <td><a href="smallclass.asp?SmallClassName=机构设置&amp;&amp;BigClassName=教务处"><img src="images143/ziye143_10.gif" alt="" width="86" height="40" border="0"></a></td> 
+     <td colspan="2"><a href="smallclass.asp?SmallClassName=|本科专业|&amp;&amp;BigClassName=教务处"><img src="images143/ziye143_11.gif" alt="" width="89" height="40" border="0"></a></td> 
+     <td><a href="smallclass.asp?SmallClassName=|规章制度|&amp;&amp;BigClassName=教务处"><img src="images143/ziye143_12.gif" alt="" width="85" height="40" border="0"></a></td> 
+     <td><a href="SmallClass.asp?SmallClassName=|教师评奖|&amp;BigClassName=教务处"><img src="images143/ziye143_13.gif" alt="" width="86" height="40" border="0"></a></td> 
+     <td><a href="SmallClass.asp?SmallClassName=|教学成果奖|&amp;BigClassName=教务处"><img src="images143/ziye143_14.gif" alt="" width="87" height="40" border="0"></a></td> 
+     <td><a href="SmallClass.asp?SmallClassName=|资助教材|&amp;BigClassName=教务处"><img src="images143/ziye143_15.gif" alt="" width="89" height="40" border="0"></a></td> 
+     <td><a href="download.asp"><img src="images143/ziye143_16.gif" alt="" width="85" height="40" border="0"></a></td> 
+     <td colspan="2"><a href="smallclass.asp?SmallClassName=联系我们&amp;&amp;BigClassName=教务处"><img src="images143/ziye143_17.gif" alt="" width="89" height="40" border="0"></a></td> 
+     <td colspan="2"> <img src="images143/ziye143_18.gif" width="188" height="40" alt=""></td> 
+    </tr> 
+    <tr> 
+     <td colspan="13"> <img src="images143/ziye143_19.gif" width="987" height="18" alt=""></td> 
+    </tr> 
+    <tr> 
+     <td width="231" height="767" colspan="3" valign="top" background="images143/ziye143_20.gif">
+      <table width="223" height="124" border="0" align="left" cellspacing="0"> 
+       <tbody>
+        <tr> 
+         <td width="19" height="35" valign="middle"><span class="unnamed51"><img src="images143/1091.jpg" width="18" height="24" alt="8"></span></td> 
+         <td width="200"><span class="unnamed51">通知</span></td> 
+        </tr> 
+        <tr> 
+         <td height="15" colspan="2" valign="top"><img src="images143/1092.jpg" width="220" height="5" alt="6"></td> 
+        </tr> 
+        <tr> 
+         <td colspan="2"><span style="WORD-BREAK: break-all; LINE-HEIGHT: 21px"> </span> 
+          <table height="32" cellspacing="0" cellpadding="0" width="221" border="0"> 
+           <tbody> 
+            <tr> 
+             <td align="middle" width="15" height="32"><img src="index10/index1_9.jpg" alt="5" width="3" height="13"></td> 
+             <td align="left" width="206" class="unnamed32" style="BORDER-BOTTOM: #c2c2be 1px dashed"><a title="关于提交2019-2020第一学期“赢在创新”新型课堂创新学分申请的通知" class="unnamed3" href="readnews.asp?id=4037&amp;bigclassname=教务处&amp;smallclassname=通知&amp;SpecialID=0"> 关于提交2019-2020第一学期“... </a></td> 
+            </tr> 
+           </tbody> 
+          </table> 
+          <table cellspacing="0" cellpadding="0" border="0"> 
+           <tbody> 
+            <tr> 
+             <td height="4"></td> 
+            </tr> 
+           </tbody> 
+          </table> <span style="WORD-BREAK: break-all; LINE-HEIGHT: 21px"> </span> 
+          <table height="32" cellspacing="0" cellpadding="0" width="221" border="0"> 
+           <tbody> 
+            <tr> 
+             <td align="middle" width="15" height="32"><img src="index10/index1_9.jpg" alt="5" width="3" height="13"></td> 
+             <td align="left" width="206" class="unnamed32" style="BORDER-BOTTOM: #c2c2be 1px dashed"><a title="暨南大学关于公布2020年度滚动资助教学改革研究项目名单的通知" class="unnamed3" href="readnews.asp?id=4036&amp;bigclassname=教务处&amp;smallclassname=通知&amp;SpecialID=0"> 暨南大学关于公布2020年度滚动... </a></td> 
+            </tr> 
+           </tbody> 
+          </table> 
+          <table cellspacing="0" cellpadding="0" border="0"> 
+           <tbody> 
+            <tr> 
+             <td height="4"></td> 
+            </tr> 
+           </tbody> 
+          </table> <span style="WORD-BREAK: break-all; LINE-HEIGHT: 21px"> </span> 
+          <table height="32" cellspacing="0" cellpadding="0" width="221" border="0"> 
+           <tbody> 
+            <tr> 
+             <td align="middle" width="15" height="32"><img src="index10/index1_9.jpg" alt="5" width="3" height="13"></td> 
+             <td align="left" width="206" class="unnamed32" style="BORDER-BOTTOM: #c2c2be 1px dashed"><a title="关于公布2019年度暨南大学--金龙鱼奖学金获奖名单的通知" class="unnamed3" href="readnews.asp?id=4035&amp;bigclassname=教务处&amp;smallclassname=通知&amp;SpecialID=0"> 关于公布2019年度暨南大学--金... </a></td> 
+            </tr> 
+           </tbody> 
+          </table> 
+          <table cellspacing="0" cellpadding="0" border="0"> 
+           <tbody> 
+            <tr> 
+             <td height="4"></td> 
+            </tr> 
+           </tbody> 
+          </table> <span style="WORD-BREAK: break-all; LINE-HEIGHT: 21px"> </span> 
+          <table height="32" cellspacing="0" cellpadding="0" width="221" border="0"> 
+           <tbody> 
+            <tr> 
+             <td align="middle" width="15" height="32"><img src="index10/index1_9.jpg" alt="5" width="3" height="13"></td> 
+             <td align="left" width="206" class="unnamed32" style="BORDER-BOTTOM: #c2c2be 1px dashed"><a title="关于转发《学士学位授权与授予管理办法》的通知" class="unnamed3" href="readnews.asp?id=4034&amp;bigclassname=教务处&amp;smallclassname=通知&amp;SpecialID=0"> 关于转发《学士学位授权与授予... </a></td> 
+            </tr> 
+           </tbody> 
+          </table> 
+          <table cellspacing="0" cellpadding="0" border="0"> 
+           <tbody> 
+            <tr> 
+             <td height="4"></td> 
+            </tr> 
+           </tbody> 
+          </table> <span style="WORD-BREAK: break-all; LINE-HEIGHT: 21px"> </span> 
+          <table height="32" cellspacing="0" cellpadding="0" width="221" border="0"> 
+           <tbody> 
+            <tr> 
+             <td align="middle" width="15" height="32"><img src="index10/index1_9.jpg" alt="5" width="3" height="13"></td> 
+             <td align="left" width="206" class="unnamed32" style="BORDER-BOTTOM: #c2c2be 1px dashed"><a title="关于申报暨南大学在线开放课程项目（SPOC教学实践专项）的通知" class="unnamed3" href="readnews.asp?id=4031&amp;bigclassname=教务处&amp;smallclassname=通知&amp;SpecialID=0"> 关于申报暨南大学在线开放课程... </a></td> 
+            </tr> 
+           </tbody> 
+          </table> 
+          <table cellspacing="0" cellpadding="0" border="0"> 
+           <tbody> 
+            <tr> 
+             <td height="4"></td> 
+            </tr> 
+           </tbody> 
+          </table> <span style="WORD-BREAK: break-all; LINE-HEIGHT: 21px"> </span> 
+          <table height="32" cellspacing="0" cellpadding="0" width="221" border="0"> 
+           <tbody> 
+            <tr> 
+             <td align="middle" width="15" height="32"><img src="index10/index1_9.jpg" alt="5" width="3" height="13"></td> 
+             <td align="left" width="206" class="unnamed32" style="BORDER-BOTTOM: #c2c2be 1px dashed"><a title="关于组织2020届毕业生登录学信网核对学籍信息和学历图像的通知" class="unnamed3" href="readnews.asp?id=4030&amp;bigclassname=教务处&amp;smallclassname=通知&amp;SpecialID=0"> 关于组织2020届毕业生登录学信... </a></td> 
+            </tr> 
+           </tbody> 
+          </table> 
+          <table cellspacing="0" cellpadding="0" border="0"> 
+           <tbody> 
+            <tr> 
+             <td height="4"></td> 
+            </tr> 
+           </tbody> 
+          </table> <span style="WORD-BREAK: break-all; LINE-HEIGHT: 21px"> </span> 
+          <table height="32" cellspacing="0" cellpadding="0" width="221" border="0"> 
+           <tbody> 
+            <tr> 
+             <td align="middle" width="15" height="32"><img src="index10/index1_9.jpg" alt="5" width="3" height="13"></td> 
+             <td align="left" width="206" class="unnamed32" style="BORDER-BOTTOM: #c2c2be 1px dashed"><a title="转发广东省教育厅关于公布2019年广东省本科高校教学质量与教学改革工程立项建设项目的通知" class="unnamed3" href="readnews.asp?id=4029&amp;bigclassname=教务处&amp;smallclassname=通知&amp;SpecialID=0"> 转发广东省教育厅关于公布201... </a></td> 
+            </tr> 
+           </tbody> 
+          </table> 
+          <table cellspacing="0" cellpadding="0" border="0"> 
+           <tbody> 
+            <tr> 
+             <td height="4"></td> 
+            </tr> 
+           </tbody> 
+          </table> <span style="WORD-BREAK: break-all; LINE-HEIGHT: 21px"> </span></td> 
+        </tr> 
+       </tbody>
+      </table></td> 
+     <td width="756" height="767" colspan="10" align="left" valign="top" background="images143/ziye143_21.gif">
+      <table width="740" height="252" border="0" align="center" cellspacing="0"> 
+       <tbody>
+        <tr> 
+         <td width="428" height="33" align="left" valign="bottom">　 <font class="unnamed6" color="#FF6600">当前位置 &gt;&gt;通知</font></td> 
+         <td width="273" align="center" valign="bottom">&nbsp;</td> 
+        </tr> 
+        <tr> 
+         <td height="15" colspan="2" align="center" valign="top"><img src="images143/109.jpg" width="700" height="8" alt="t"></td> 
+        </tr> 
+        <tr> 
+         <td height="113" colspan="2" align="center" valign="top">
+          <table width="94%" border="0" align="center" cellpadding="1" cellspacing="1" bgcolor="#AAAAAA"> 
+           <tbody>
+            <tr bgcolor="#E0DCDC" class="unnamed3"> 
+             <td height="20">
+              <div align="center">
+               文 章 标 题
+              </div></td> 
+             <td>
+              <div align="center">
+               发布日期
+              </div></td> 
+             <td>
+              <div align="center">
+               点击
+              </div></td> 
+            </tr> 
+            <tr> 
+             <td width="80%" height="32" bgcolor="#FFFFFF" class="unnamed3">&nbsp;<img src="Images/sdotgreen.gif" alt="6" width="7" height="7" border="0" align="absmiddle">&nbsp;<a href="ReadNews.asp?ID=4037&amp;BigClassName=教务处&amp;SmallClassName=通知&amp;SpecialID=0" target="_blank">关于提交2019-2020第一学期“赢在创新”新型课堂创新学分申请的通知</a><img src="images/img.gif" height="9" border="0"></td> 
+             <td width="13%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle">2019-12-26</font>
+              </div></td> 
+             <td width="7%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle"><font color="#ff0000">109</font></font>
+              </div></td> 
+            </tr> 
+            <tr> 
+             <td width="80%" height="32" bgcolor="#FFFFFF" class="unnamed3">&nbsp;<img src="Images/sdotgreen.gif" alt="6" width="7" height="7" border="0" align="absmiddle">&nbsp;<a href="ReadNews.asp?ID=4036&amp;BigClassName=教务处&amp;SmallClassName=通知&amp;SpecialID=0" target="_blank">暨南大学关于公布2020年度滚动资助教学改革研究项目名单的通知</a></td> 
+             <td width="13%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle">2019-12-20</font>
+              </div></td> 
+             <td width="7%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle"><font color="#ff0000">300</font></font>
+              </div></td> 
+            </tr> 
+            <tr> 
+             <td width="80%" height="32" bgcolor="#FFFFFF" class="unnamed3">&nbsp;<img src="Images/sdotgreen.gif" alt="6" width="7" height="7" border="0" align="absmiddle">&nbsp;<a href="ReadNews.asp?ID=4035&amp;BigClassName=教务处&amp;SmallClassName=通知&amp;SpecialID=0" target="_blank">关于公布2019年度暨南大学--金龙鱼奖学金获奖名单的通知</a></td> 
+             <td width="13%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle">2019-12-19</font>
+              </div></td> 
+             <td width="7%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle"><font color="#ff0000">196</font></font>
+              </div></td> 
+            </tr> 
+            <tr> 
+             <td width="80%" height="32" bgcolor="#FFFFFF" class="unnamed3">&nbsp;<img src="Images/sdotgreen.gif" alt="6" width="7" height="7" border="0" align="absmiddle">&nbsp;<a href="ReadNews.asp?ID=4034&amp;BigClassName=教务处&amp;SmallClassName=通知&amp;SpecialID=0" target="_blank">关于转发《学士学位授权与授予管理办法》的通知</a></td> 
+             <td width="13%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle">2019-12-16</font>
+              </div></td> 
+             <td width="7%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle"><font color="#ff0000">402</font></font>
+              </div></td> 
+            </tr> 
+            <tr> 
+             <td width="80%" height="32" bgcolor="#FFFFFF" class="unnamed3">&nbsp;<img src="Images/sdotgreen.gif" alt="6" width="7" height="7" border="0" align="absmiddle">&nbsp;<a href="ReadNews.asp?ID=4031&amp;BigClassName=教务处&amp;SmallClassName=通知&amp;SpecialID=0" target="_blank">关于申报暨南大学在线开放课程项目（SPOC教学实践专项）的通知</a></td> 
+             <td width="13%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle">2019-12-13</font>
+              </div></td> 
+             <td width="7%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle"><font color="#ff0000">604</font></font>
+              </div></td> 
+            </tr> 
+            <tr> 
+             <td width="80%" height="32" bgcolor="#FFFFFF" class="unnamed3">&nbsp;<img src="Images/sdotgreen.gif" alt="6" width="7" height="7" border="0" align="absmiddle">&nbsp;<a href="ReadNews.asp?ID=4030&amp;BigClassName=教务处&amp;SmallClassName=通知&amp;SpecialID=0" target="_blank">关于组织2020届毕业生登录学信网核对学籍信息和学历图像的通知</a></td> 
+             <td width="13%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle">2019-12-11</font>
+              </div></td> 
+             <td width="7%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle"><font color="#ff0000">2721</font></font>
+              </div></td> 
+            </tr> 
+            <tr> 
+             <td width="80%" height="32" bgcolor="#FFFFFF" class="unnamed3">&nbsp;<img src="Images/sdotgreen.gif" alt="6" width="7" height="7" border="0" align="absmiddle">&nbsp;<a href="ReadNews.asp?ID=4029&amp;BigClassName=教务处&amp;SmallClassName=通知&amp;SpecialID=0" target="_blank">转发广东省教育厅关于公布2019年广东省本科高校教学质量与教学改革工程立项建设项目的通知</a></td> 
+             <td width="13%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle">2019-12-11</font>
+              </div></td> 
+             <td width="7%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle"><font color="#ff0000">497</font></font>
+              </div></td> 
+            </tr> 
+            <tr> 
+             <td width="80%" height="32" bgcolor="#FFFFFF" class="unnamed3">&nbsp;<img src="Images/sdotgreen.gif" alt="6" width="7" height="7" border="0" align="absmiddle">&nbsp;<a href="ReadNews.asp?ID=4028&amp;BigClassName=教务处&amp;SmallClassName=通知&amp;SpecialID=0" target="_blank">关于开展2019-2020学年第一学期期末教学检查的通知</a></td> 
+             <td width="13%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle">2019-12-19</font>
+              </div></td> 
+             <td width="7%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle"><font color="#ff0000">294</font></font>
+              </div></td> 
+            </tr> 
+            <tr> 
+             <td width="80%" height="32" bgcolor="#FFFFFF" class="unnamed3">&nbsp;<img src="Images/sdotgreen.gif" alt="6" width="7" height="7" border="0" align="absmiddle">&nbsp;<a href="ReadNews.asp?ID=4026&amp;BigClassName=教务处&amp;SmallClassName=通知&amp;SpecialID=0" target="_blank">关于做好2019～2020学年度第一学期期末考试工作的通知</a></td> 
+             <td width="13%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle">2019-12-6</font>
+              </div></td> 
+             <td width="7%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle"><font color="#ff0000">981</font></font>
+              </div></td> 
+            </tr> 
+            <tr> 
+             <td width="80%" height="32" bgcolor="#FFFFFF" class="unnamed3">&nbsp;<img src="Images/sdotgreen.gif" alt="6" width="7" height="7" border="0" align="absmiddle">&nbsp;<a href="ReadNews.asp?ID=4025&amp;BigClassName=教务处&amp;SmallClassName=通知&amp;SpecialID=0" target="_blank">关于2019年下半年全国大学英语四、六级考试有关事项的通知</a></td> 
+             <td width="13%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle">2019-12-6</font>
+              </div></td> 
+             <td width="7%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle"><font color="#ff0000">571</font></font>
+              </div></td> 
+            </tr> 
+            <tr> 
+             <td width="80%" height="32" bgcolor="#FFFFFF" class="unnamed3">&nbsp;<img src="Images/sdotgreen.gif" alt="6" width="7" height="7" border="0" align="absmiddle">&nbsp;<a href="ReadNews.asp?ID=4023&amp;BigClassName=教务处&amp;SmallClassName=通知&amp;SpecialID=0" target="_blank">关于做好2021届（及2020届补拍）本科毕业生学历图像采集工作的通知</a></td> 
+             <td width="13%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle">2019-12-4</font>
+              </div></td> 
+             <td width="7%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle"><font color="#ff0000">1709</font></font>
+              </div></td> 
+            </tr> 
+            <tr> 
+             <td width="80%" height="32" bgcolor="#FFFFFF" class="unnamed3">&nbsp;<img src="Images/sdotgreen.gif" alt="6" width="7" height="7" border="0" align="absmiddle">&nbsp;<a href="ReadNews.asp?ID=4022&amp;BigClassName=教务处&amp;SmallClassName=通知&amp;SpecialID=0" target="_blank">关于公布2019年度暨南大学大学生创新创业训练计划项目中期检查结果的通知</a></td> 
+             <td width="13%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle">2019-12-3</font>
+              </div></td> 
+             <td width="7%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle"><font color="#ff0000">537</font></font>
+              </div></td> 
+            </tr> 
+            <tr> 
+             <td width="80%" height="32" bgcolor="#FFFFFF" class="unnamed3">&nbsp;<img src="Images/sdotgreen.gif" alt="6" width="7" height="7" border="0" align="absmiddle">&nbsp;<a href="ReadNews.asp?ID=4021&amp;BigClassName=教务处&amp;SmallClassName=通知&amp;SpecialID=0" target="_blank">2019-2020学年第二学期全日制本科学生选课通知</a></td> 
+             <td width="13%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle">2019-12-2</font>
+              </div></td> 
+             <td width="7%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle"><font color="#ff0000">5867</font></font>
+              </div></td> 
+            </tr> 
+            <tr> 
+             <td width="80%" height="32" bgcolor="#FFFFFF" class="unnamed3">&nbsp;<img src="Images/sdotgreen.gif" alt="6" width="7" height="7" border="0" align="absmiddle">&nbsp;<a href="ReadNews.asp?ID=4020&amp;BigClassName=教务处&amp;SmallClassName=通知&amp;SpecialID=0" target="_blank">关于组织申报暨南大学2020年度大学生创新创业训练计划项目的通知</a></td> 
+             <td width="13%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle">2019-11-28</font>
+              </div></td> 
+             <td width="7%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle"><font color="#ff0000">1374</font></font>
+              </div></td> 
+            </tr> 
+            <tr> 
+             <td width="80%" height="32" bgcolor="#FFFFFF" class="unnamed3">&nbsp;<img src="Images/sdotgreen.gif" alt="6" width="7" height="7" border="0" align="absmiddle">&nbsp;<a href="ReadNews.asp?ID=4019&amp;BigClassName=教务处&amp;SmallClassName=通知&amp;SpecialID=0" target="_blank">关于开展2019-2020年度第一学期本科生创新创业活动学分认定工作的通知</a></td> 
+             <td width="13%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle">2019-11-28</font>
+              </div></td> 
+             <td width="7%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle"><font color="#ff0000">2513</font></font>
+              </div></td> 
+            </tr> 
+            <tr> 
+             <td width="80%" height="32" bgcolor="#FFFFFF" class="unnamed3">&nbsp;<img src="Images/sdotgreen.gif" alt="6" width="7" height="7" border="0" align="absmiddle">&nbsp;<a href="ReadNews.asp?ID=4017&amp;BigClassName=教务处&amp;SmallClassName=通知&amp;SpecialID=0" target="_blank">关于本科学生核对英文名的通知</a></td> 
+             <td width="13%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle">2019-11-26</font>
+              </div></td> 
+             <td width="7%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle"><font color="#ff0000">1207</font></font>
+              </div></td> 
+            </tr> 
+            <tr> 
+             <td width="80%" height="32" bgcolor="#FFFFFF" class="unnamed3">&nbsp;<img src="Images/sdotgreen.gif" alt="6" width="7" height="7" border="0" align="absmiddle">&nbsp;<a href="ReadNews.asp?ID=4016&amp;BigClassName=教务处&amp;SmallClassName=通知&amp;SpecialID=0" target="_blank">关于开展2019年线下、线上线下混合式、社会实践国家级一流本科课程推荐申报工作的通知</a></td> 
+             <td width="13%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle">2019-11-26</font>
+              </div></td> 
+             <td width="7%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle"><font color="#ff0000">439</font></font>
+              </div></td> 
+            </tr> 
+            <tr> 
+             <td width="80%" height="32" bgcolor="#FFFFFF" class="unnamed3">&nbsp;<img src="Images/sdotgreen.gif" alt="6" width="7" height="7" border="0" align="absmiddle">&nbsp;<a href="ReadNews.asp?ID=4015&amp;BigClassName=教务处&amp;SmallClassName=通知&amp;SpecialID=0" target="_blank">关于开展2019-2020学年第一学期本科课程评估工作的通知</a></td> 
+             <td width="13%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle">2019-11-21</font>
+              </div></td> 
+             <td width="7%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle"><font color="#ff0000">12627</font></font>
+              </div></td> 
+            </tr> 
+            <tr> 
+             <td width="80%" height="32" bgcolor="#FFFFFF" class="unnamed3">&nbsp;<img src="Images/sdotgreen.gif" alt="6" width="7" height="7" border="0" align="absmiddle">&nbsp;<a href="ReadNews.asp?ID=4014&amp;BigClassName=教务处&amp;SmallClassName=通知&amp;SpecialID=0" target="_blank">关于开展暨南大学第二十二批教学改革研究项目申报工作的通知</a></td> 
+             <td width="13%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle">2019-11-20</font>
+              </div></td> 
+             <td width="7%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle"><font color="#ff0000">1373</font></font>
+              </div></td> 
+            </tr> 
+            <tr> 
+             <td width="80%" height="32" bgcolor="#FFFFFF" class="unnamed3">&nbsp;<img src="Images/sdotgreen.gif" alt="6" width="7" height="7" border="0" align="absmiddle">&nbsp;<a href="ReadNews.asp?ID=4013&amp;BigClassName=教务处&amp;SmallClassName=通知&amp;SpecialID=0" target="_blank">关于公布暨南大学2019年度校级教学改革研究项目结题验收及中期检查结果的通知</a></td> 
+             <td width="13%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle">2019-11-20</font>
+              </div></td> 
+             <td width="7%" bgcolor="#FFFFFF" class="unnamed3">
+              <div align="center">
+               <font class="middle"><font color="#ff0000">314</font></font>
+              </div></td> 
+            </tr> 
+            <tr> 
+             <td bgcolor="#E0DCDC" colspan="3" align="center" class="unnamed3">共 2273 条，当前第 1/114 页，每页 20 条 <b>[1]</b><a class="gray" href="SmallClass_index.asp?BigClassName=教务处&amp;SmallClassName=通知&amp;page=2">[2]</a><a class="gray" href="SmallClass_index.asp?BigClassName=教务处&amp;SmallClassName=通知&amp;page=3">[3]</a><a class="gray" href="SmallClass_index.asp?BigClassName=教务处&amp;SmallClassName=通知&amp;page=4">[4]</a><a class="gray" href="SmallClass_index.asp?BigClassName=教务处&amp;SmallClassName=通知&amp;page=5">[5]</a><a class="gray" href="SmallClass_index.asp?BigClassName=教务处&amp;SmallClassName=通知&amp;page=6">[6]</a><a class="gray" href="SmallClass_index.asp?BigClassName=教务处&amp;SmallClassName=通知&amp;page=7">[7]</a><a class="gray" href="SmallClass_index.asp?BigClassName=教务处&amp;SmallClassName=通知&amp;page=8">[8]</a><a class="gray" href="SmallClass_index.asp?BigClassName=教务处&amp;SmallClassName=通知&amp;page=9">[9]</a><a class="gray" href="SmallClass_index.asp?BigClassName=教务处&amp;SmallClassName=通知&amp;page=10">[10]</a><a class="gray" href="SmallClass_index.asp?BigClassName=教务处&amp;SmallClassName=通知&amp;page=11">[11]</a><a class="gray" href="SmallClass_index.asp?BigClassName=教务处&amp;SmallClassName=通知&amp;page=12">[12]</a><a class="gray" href="SmallClass_index.asp?BigClassName=教务处&amp;SmallClassName=通知&amp;page=13">[13]</a><a class="gray" href="SmallClass_index.asp?BigClassName=教务处&amp;SmallClassName=通知&amp;page=14">[14]</a><a class="gray" href="SmallClass_index.asp?BigClassName=教务处&amp;SmallClassName=通知&amp;page=15">[15]</a><a class="gray" href="SmallClass_index.asp?BigClassName=教务处&amp;SmallClassName=通知&amp;page=16">[16]</a><a class="gray" href="SmallClass_index.asp?BigClassName=教务处&amp;SmallClassName=通知&amp;page=2" title="第2页">下一页</a><a class="gray" href="SmallClass_index.asp?BigClassName=教务处&amp;SmallClassName=通知&amp;page=114" title="第114页">页尾</a><a class="gray" href="SmallClass_index.asp?BigClassName=教务处&amp;SmallClassName=通知&amp;page=17" title="下16页">下一翻页</a></td> 
+            </tr> 
+           </tbody>
+          </table> <p></p></td> 
+        </tr> 
+       </tbody>
+      </table></td> 
+    </tr> 
+    <tr> 
+     <td colspan="13"> <img src="images143/ziye143_22.gif" width="987" height="80" alt=""></td> 
+    </tr> 
+    <tr> 
+     <td> <img src="images143/分隔符.gif" width="23" height="1" alt=""></td> 
+     <td> <img src="images143/分隔符.gif" width="103" height="1" alt=""></td> 
+     <td> <img src="images143/分隔符.gif" width="86" height="1" alt=""></td> 
+     <td> <img src="images143/分隔符.gif" width="42" height="1" alt=""></td> 
+     <td> <img src="images143/分隔符.gif" width="47" height="1" alt=""></td> 
+     <td> <img src="images143/分隔符.gif" width="85" height="1" alt=""></td> 
+     <td> <img src="images143/分隔符.gif" width="86" height="1" alt=""></td> 
+     <td> <img src="images143/分隔符.gif" width="87" height="1" alt=""></td> 
+     <td> <img src="images143/分隔符.gif" width="89" height="1" alt=""></td> 
+     <td> <img src="images143/分隔符.gif" width="85" height="1" alt=""></td> 
+     <td> <img src="images143/分隔符.gif" width="42" height="1" alt=""></td> 
+     <td> <img src="images143/分隔符.gif" width="47" height="1" alt=""></td> 
+     <td> <img src="images143/分隔符.gif" width="106" height="1" alt=""></td> 
+     <td> <img src="images143/分隔符.gif" width="82" height="1" alt=""></td> 
+     <td> <img src="images143/分隔符.gif" width="14" height="1" alt=""></td> 
+    </tr> 
+   </tbody>
+  </table> 
+  <!-- End Save for Web Slices -->  
+ </body>
+</html>
